@@ -5,6 +5,7 @@ import crypto from 'node:crypto';
 import { gzipSync, gunzipSync } from 'node:zlib';
 const root=path.resolve(import.meta.dirname,'..'),src=path.join(root,'web'),out=path.join(root,'_site');
 const base=process.env.PRISMA_BASE_PATH||'/plataformaonline/';
+const configRevision=crypto.createHash('sha256').update(fs.readFileSync(path.join(src,'online-config.js'))).digest('hex').slice(0,12);
 if(!/^\/[A-Za-z0-9_-]+\/$/.test(base))throw Error('Invalid project base path');
 fs.mkdirSync(out,{recursive:true});
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(path.join(dir,x.name)):[path.join(dir,x.name)]);}
@@ -15,7 +16,7 @@ for(const file of walk(src)){
  // Rewrite application-root asset/navigation paths; API routes use the transport.
  text=text.replace(/(["'`(])\/(assets|modules|data|legal)\//g,(_,q,part)=>q+base+part+'/');
  if(file.endsWith('.html')){
-  text=text.replace(/<head>/i,'<head>\n<script>window.PRISMA_BASE_PATH='+JSON.stringify(base)+';</script><script src="'+base+'online-config.js"></script><script src="'+base+'assets/prisma-cloud.js"></script>');
+  text=text.replace(/<head>/i,'<head>\n<script>window.PRISMA_BASE_PATH='+JSON.stringify(base)+';</script><script src="'+base+'online-config.js?v='+configRevision+'"></script><script src="'+base+'assets/prisma-cloud.js"></script>');
   if(relative.replaceAll('\\','/')==='modules/learn/index.html'){
    const marker='  <script src="../../assets/prisma-bank-enhancer.js',start=text.indexOf(marker),end=text.indexOf('</body>',start);if(start<0||end<0)throw Error('Learning bootstrap changed');
    const scripts=[...text.slice(start,end).matchAll(/<script src="([^"]+)"[^>]*><\/script>/g)].map(m=>m[1]);
