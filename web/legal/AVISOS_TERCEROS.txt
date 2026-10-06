@@ -1,0 +1,29 @@
+﻿AVISOS DE COMPONENTES DE TERCEROS — PRISMA STEM Offline 1.0.0
+La licencia propia de evaluación se aplica solo a los componentes propios.
+Los permisos de los componentes de terceros se conservan y no se reducen.
+
+Python 3.12.10: runtime/python/LICENSE.txt. Incluye las licencias de Python
+y avisos de bibliotecas incorporadas. https://docs.python.org/3.12/license.html
+llama.cpp b10326: runtime/llama/LICENSE-llama.cpp.txt, licencia MIT.
+https://github.com/ggml-org/llama.cpp
+pypdf 5.9.0: vendor/pypdf/LICENSE, licencia BSD de tres cláusulas.
+https://github.com/py-pdf/pypdf/tree/5.9.0
+
+Bibliotecas Microsoft Visual C++ y libomp140.x86_64.dll:
+conservan sus titulares y condiciones propias. No se declaran propiedad
+de PRISMA ni se les aplica su licencia de evaluación. La redistribución
+de binarios Microsoft requiere verificar la procedencia y habilitación
+correspondientes; véase docs/REVISION_TERCEROS.md antes de distribuir.
+https://learn.microsoft.com/en-us/cpp/windows/redistributing-visual-cpp-files
+
+Gemma NO está incluido. El nombre gemma2b.gguf no identifica por sí solo
+una edición, conversión o licencia. El responsable documentará la fuente,
+versión y términos del archivo que copie en models.
+Términos: https://ai.google.dev/gemma/terms
+Usos prohibidos: https://ai.google.dev/gemma/prohibited_use_policy
+No se transfiere propiedad sobre el modelo. Si se redistribuye o se sirve,
+deben cumplirse sus términos específicos y avisos correspondientes.
+
+Recursos propios y recursos de terceros deben identificarse separadamente
+en el expediente del registro. Esta lista no acredita la titularidad de
+materiales aportados posteriormente por docentes o instituciones.

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- PRISMA: Pantalla de Ruta Adaptativa: mision, respuesta escrita, rubrica y feedback. -->
+<!-- PRISMA: Los id de los elementos son usados por JavaScript; no renombrarlos sin actualizar su app.js. -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a1536">
+  <title>Ruta adaptativa · PRISMA STEM Online</title>
+  <link rel="stylesheet" href="../../assets/prisma-module-theme.css?v=100-release">
+  <link rel="stylesheet" href="../learn/styles.css?v=100-release">
+  <link rel="stylesheet" href="styles.css?v=100-release">
+<link rel="stylesheet" href="/assets/prisma-v3.css?v=100-release"><meta name="prisma-edition" content="online-rules"><style>.online-edition{padding:8px 14px;background:#eaf3fb;color:#163452;font:14px system-ui;text-align:center;overflow-wrap:anywhere}</style></head>
+<body class="adaptive-body">
+  <header class="module-topbar">
+    <a class="back-btn" href="../../index.html?return=module">← Plataforma PRISMA</a>
+    <div class="module-brand"><strong>PRISMA · Ruta adaptativa STEM</strong><small>Tu espacio para pensar y mejorar</small></div>
+    <div class="user-mini"><strong id="userCode">Participante</strong><small id="userGrade">Grado</small></div>
+  </header>
+
+  <main class="adaptive-root">
+    <section class="adaptive-hero module-hero">
+      <div>
+        <span class="eyebrow">ACTIVIDAD PRINCIPAL DE PRISMA</span>
+        <h1>Tu reto adaptativo</h1>
+        <p>Lee el caso, escribe tu solución y recibe orientación para mejorar. Este es el centro de tu aprendizaje; los módulos te ayudan a practicar lo que necesitas.</p>
+        <div id="aiRequirement" class="ai-requirement hidden">Trabajarás con uno de los 40 retos prediseñados. Recibirás orientación y revisión docente.</div>
+      </div>
+      <div class="adaptive-status-panel">
+        <div class="status-orb adaptive-mascot-orb"><img id="adaptiveMascotImage" src="../../assets/prismi/huevito.svg" alt="Mascota de la ruta adaptativa"></div>
+        <strong id="adaptiveMascotPhase">Huevito adaptativo</strong>
+        <small id="adaptiveMascotProgress">0 misiones superadas · evoluciona al llegar a 5</small>
+        <div class="adaptive-mascot-track"><span id="adaptiveMascotBar"></span></div><div id="adaptiveRewardBadges" class="adaptive-reward-badges"></div>
+        <details class="optional-panel"><summary>Estado de la ayuda automática</summary><strong id="engineStatus">Motor local</strong>
+        <small id="engineDetail">Comprobando el banco prediseñado…</small></details>
+      </div>
+    </section>
+
+    <section class="adaptive-grid">
+
+
+      <article class="adaptive-card mission-card-local">
+        <div class="mission-heading">
+          <div><span class="eyebrow">1 · LEE EL CASO</span><h2 id="missionTitle">Generando misión…</h2></div>
+          <button id="newMissionBtn" class="secondary-btn" type="button">Cambiar de reto</button>
+        </div>
+        <div id="missionLoading" class="mission-loading"><div class="ai-live-head"><span class="loader-orb">✦</span><div><strong>Tu nuevo reto</strong><small>El texto aparece por fragmentos mientras PRISMA presenta el reto seleccionado.</small></div></div><pre id="missionLiveText" class="ai-live-text" aria-live="off"></pre></div>
+        <div class="mission-source-row"><span id="missionSource" class="mission-source">Preparando…</span></div>
+        <details><summary>Consultar texto completo del reto</summary><pre id="missionFullText" class="mission-full-text"></pre></details>
+        
+        <p id="missionStory" class="mission-story"></p>
+        <div id="missionContext" class="mission-context"></div>
+        <div id="missionTask" class="mission-task"></div>
+        <details class="optional-panel"><summary>Necesito una guía para responder</summary><div id="missionSteps" class="mission-steps"></div></details>
+        
+        <details class="optional-panel"><summary>¿Qué se tendrá en cuenta al revisar mi respuesta?</summary><div class="mission-complete-grid">
+          <div class="mission-deliverable"><strong>📌 Qué debes entregar</strong><p id="missionEvidence"></p></div>
+          <div class="mission-success"><strong>✅ Criterio de éxito</strong><p id="missionSuccess"></p></div>
+        </div>
+        <div id="missionMeta" class="mission-meta"></div></details>
+        <div id="revisionGuide" class="revision-guide hidden"></div>
+        <details class="optional-panel"><summary>¿Recibiste ayuda para responder?</summary><label>Apoyo utilizado<select id="processSupport"><option value="">Trabajo autónomo</option value="hint">Pista o ejemplo</option><option value="peer">Colaboración</option><option value="teacher">Mediación docente</option></select></label></details><label class="answer-label" for="missionAnswer">2 · ESCRIBE TU RESPUESTA</label>
+        <textarea id="missionAnswer" rows="8" maxlength="5000" placeholder="¿Qué propones? ¿Por qué? ¿Cómo compruebas tu decisión con los datos del caso?"></textarea>
+        <div class="answer-footer"><small id="wordCounter">0 palabras</small><button id="evaluateBtn" class="primary-btn" type="button">3 · Revisar mi respuesta</button></div>
+        <div id="evaluationLive" class="ai-live-box hidden"><div class="ai-live-head"><span class="loader-orb">✦</span><div><strong>Revisando tu respuesta</strong><small>Espera mientras se prepara la valoración y las sugerencias para continuar dentro de PRISMA.</small></div></div><pre id="evaluationLiveText" class="ai-live-text"></pre></div>
+      </article>
+    </section>
+
+<details class="optional-panel progress-panel"><summary>Ver mi avance en las cuatro habilidades</summary>      <article class="adaptive-card focus-card">
+        <span class="eyebrow">MI APRENDIZAJE</span>
+        <h2 id="focusTitle">Foco actual</h2>
+        <p id="focusReason"></p>
+        <div id="masteryGrid" class="mastery-grid"></div>
+        <div id="debtPill" class="debt-pill"></div>
+      </article></details>
+    <section id="resultSection" class="adaptive-card result-adaptive hidden">
+      <div class="result-adaptive-head">
+        <div><span class="eyebrow">EVALUACIÓN FORMATIVA</span><h2>Tu resultado y cómo mejorar</h2></div>
+        <span id="evaluationMode" class="sync-pill">Evaluando…</span>
+      </div>
+      <div id="rubricGrid" class="rubric-grid"></div>
+      <p class="approval-rule-note">Para aprobar este reto debes obtener <strong>3/4 o más en cada una de las cuatro habilidades</strong>. El promedio general no reemplaza este criterio.</p>
+      <div id="approvalStatus" class="approval-status hidden" role="status" aria-live="polite"></div>
+      <div id="progressNotice" class="progress-notice hidden"></div>
+      <div class="feedback-panel ai-evaluation-panel"><strong>🧠 Retroalimentación general</strong><p id="feedbackText"></p></div>
+      <details class="optional-panel"><summary>Ver fortalezas y detalles de la revisión</summary><div class="evaluation-detail-grid">
+        <div class="feedback-panel"><strong>🌟 Fortalezas</strong><div id="strengthList"></div></div>
+        <div class="feedback-panel"><strong>🧩 Aspectos por fortalecer</strong><div id="weaknessList"></div></div>
+        <div class="feedback-panel"><strong>🛠️ Mejoras concretas</strong><div id="improvementList"></div></div>
+        <div class="feedback-panel"><strong>👩‍🏫 Mediación docente sugerida</strong><p id="teacherSuggestion"></p></div>
+      </div>
+      </details><section class="learning-path-panel">
+        <div class="learning-path-head"><div><span class="eyebrow">TU RUTA ADAPTATIVA</span><h2>Tu siguiente paso</h2></div><span class="route-pill">Ruta personal</span></div>
+        <div class="learning-goal"><strong>🎯 Objetivo de aprendizaje</strong><p id="learningGoal"></p></div>
+        <details class="optional-panel"><summary>Ver mi plan de práctica y mejora</summary><div id="learningRoute" class="learning-route"></div>
+        <div class="microchallenge-card"><div><strong>⚡ Mini-reto de mejora</strong><p id="microChallenge"></p></div><div class="success-box"><small>Sabes que mejoraste cuando…</small><p id="learningSuccess"></p></div></div>
+        <div class="next-transfer"><strong>🚀 Transferencia a la siguiente misión</strong><p id="nextMissionFocus"></p></div>
+</details>      </section>
+      <div class="decision-panel decision-wide"><strong>🧭 Refuerzo PRISMA recomendado</strong><details class="optional-panel"><summary>¿Por qué se recomienda esta práctica?</summary><p id="decisionReason"></p></details><div id="recommendationButtons" class="recommendation-buttons"></div></div>
+      <details class="optional-panel"><summary>Información de la evaluación</summary><p id="auditNote" class="audit-note hidden"></p></details>
+      <div class="result-actions"><button id="reviseAnswerBtn" class="primary-btn" type="button">Mejorar mi respuesta</button><button id="newCycleBtn" class="secondary-btn" type="button">Aplicar en un problema nuevo</button><a class="secondary-btn anchor-btn" href="../../index.html?return=module">Volver al inicio</a></div>
+    </section>
+  </main>
+
+  <div id="celebrationOverlay" class="celebration-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="celebrationTitle">
+    <div class="celebration-confetti" aria-hidden="true"><i>✦</i><i>★</i><i>✧</i><i>⭐</i><i>✦</i><i>★</i><i>💫</i><i>✧</i></div>
+    <div class="celebration-card">
+      <img id="celebrationMascot" src="../../assets/prismi/huevito.svg" alt="Mascota PRISMA celebrando">
+      <span class="eyebrow">RETO ADAPTATIVO APROBADO</span>
+      <h2 id="celebrationTitle">¡Felicitaciones!</h2>
+      <p id="celebrationMessage"></p>
+      <div id="specialReward" class="special-reward hidden"></div>
+      <button id="closeCelebrationBtn" class="primary-btn" type="button">Continuar mi ruta</button>
+    </div>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="../../assets/prisma-modules.js?v=100-release"></script>
+  <script src="../../config.js?v=100-release"></script>
+  <script src="../../assets/prisma-adaptive.js?v=100-release"></script>
+  <script src="../../assets/prisma-research.js?v=100-release"></script>
+  <script src="../../assets/prisma-curriculum.js?v=100-release"></script><script src="../../assets/prisma-digital-feedback.js?v=100-release"></script><script src="app.js?v=100-release"></script>
+<script src="/assets/prisma-evidence.js?v=100-release"></script><script src="/assets/prisma-study-link.js?v=100-release"></script><script src="/assets/prisma-prismi.js?v=100-release"></script><script src="/assets/prisma-adaptive-audit.js?v=100-release"></script></body>
+</html>

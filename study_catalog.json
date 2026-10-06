@@ -1,0 +1,2906 @@
+{
+  "IM-1": {
+    "id": "IM-1",
+    "version": "original-2026-09-13",
+    "status": "pendiente_validacion",
+    "title": "Cuestionario diagnóstico de brechas de acceso y uso tecnológico",
+    "source": "IM-1 Cuestionario diagnostico de brechas de acceso y uso tecnologico.docx",
+    "items": [
+      {
+        "id": "1",
+        "prompt": "¿Tienes acceso a un computador o tableta para realizar actividades escolares?",
+        "dimension": "A. Acceso material",
+        "type": "category",
+        "options": [
+          "Siempre disponible",
+          "Compartido",
+          "Solo en la institución",
+          "No dispongo"
+        ],
+        "values": [
+          "Siempre disponible",
+          "Compartido",
+          "Solo en la institución",
+          "No dispongo"
+        ]
+      },
+      {
+        "id": "2",
+        "prompt": "Cuando necesitas un dispositivo para estudiar, ¿puedes usarlo durante el tiempo necesario?",
+        "dimension": "A. Acceso material",
+        "type": "frequency",
+        "options": [
+          "Nunca",
+          "Rara vez",
+          "Algunas veces",
+          "Frecuentemente",
+          "Siempre"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "3",
+        "prompt": "¿Cuál es el dispositivo que utilizas con mayor frecuencia para actividades escolares?",
+        "dimension": "A. Acceso material",
+        "type": "category",
+        "options": [
+          "Computador",
+          "Tableta",
+          "Celular",
+          "Otro",
+          "Ninguno"
+        ],
+        "values": [
+          "Computador",
+          "Tableta",
+          "Celular",
+          "Otro",
+          "Ninguno"
+        ]
+      },
+      {
+        "id": "4",
+        "prompt": "¿La falta de dispositivos ha impedido o retrasado alguna actividad escolar durante el último mes?",
+        "dimension": "A. Acceso material",
+        "type": "category",
+        "options": [
+          "Nunca",
+          "Una vez",
+          "Algunas veces",
+          "Frecuentemente"
+        ],
+        "values": [
+          "Nunca",
+          "Una vez",
+          "Algunas veces",
+          "Frecuentemente"
+        ]
+      },
+      {
+        "id": "5",
+        "prompt": "¿Tienes acceso a internet en tu hogar?",
+        "dimension": "B. Conectividad",
+        "type": "category",
+        "options": [
+          "Sí, fijo",
+          "Sí, principalmente datos móviles",
+          "Algunas veces",
+          "No"
+        ],
+        "values": [
+          "Sí, fijo",
+          "Sí, principalmente datos móviles",
+          "Algunas veces",
+          "No"
+        ]
+      },
+      {
+        "id": "6",
+        "prompt": "La conexión que utilizas te permite completar actividades escolares sin interrupciones importantes.",
+        "dimension": "B. Conectividad",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "7",
+        "prompt": "¿Con qué frecuencia has dejado de completar una actividad escolar por problemas de conexión?",
+        "dimension": "B. Conectividad",
+        "type": "frequency",
+        "options": [
+          "Nunca",
+          "Rara vez",
+          "Algunas veces",
+          "Frecuentemente",
+          "Siempre"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "8",
+        "prompt": "El costo o la disponibilidad de internet limita mi acceso a recursos educativos digitales.",
+        "dimension": "B. Conectividad",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "9",
+        "prompt": "Puedo ingresar y utilizar una plataforma educativa sin ayuda constante.",
+        "dimension": "C. Habilidades digitales",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "10",
+        "prompt": "Puedo buscar información digital y seleccionar la que me sirve para una actividad escolar.",
+        "dimension": "C. Habilidades digitales",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "11",
+        "prompt": "Puedo guardar, recuperar y enviar archivos o respuestas digitales.",
+        "dimension": "C. Habilidades digitales",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "12",
+        "prompt": "Puedo resolver dificultades básicas cuando utilizo una herramienta digital.",
+        "dimension": "C. Habilidades digitales",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "13",
+        "prompt": "¿Con qué frecuencia utilizas recursos digitales para estudiar, practicar o resolver tareas?",
+        "dimension": "D. Uso y aprovechamiento educativo",
+        "type": "frequency",
+        "options": [
+          "Nunca",
+          "Rara vez",
+          "Algunas veces",
+          "Frecuentemente",
+          "Siempre"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "14",
+        "prompt": "Utilizo recursos digitales para resolver problemas o desarrollar proyectos escolares.",
+        "dimension": "D. Uso y aprovechamiento educativo",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "15",
+        "prompt": "Puedo utilizar información digital para explicar o justificar una respuesta.",
+        "dimension": "D. Uso y aprovechamiento educativo",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "16",
+        "prompt": "Las tecnologías disponibles me permiten acceder a actividades que apoyan mi aprendizaje.",
+        "dimension": "D. Uso y aprovechamiento educativo",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "17",
+        "prompt": "Antes de esta investigación, ¿habías utilizado una plataforma que cambiara actividades o ayudas según tus respuestas?",
+        "dimension": "E. Acceso previo a experiencias adaptativas STEM",
+        "type": "category",
+        "options": [
+          "Sí",
+          "No",
+          "No estoy seguro/a"
+        ],
+        "values": [
+          "Sí",
+          "No",
+          "No estoy seguro/a"
+        ]
+      },
+      {
+        "id": "18",
+        "prompt": "¿Con qué frecuencia has recibido retroalimentación digital personalizada según tus dificultades?",
+        "dimension": "E. Acceso previo a experiencias adaptativas STEM",
+        "type": "frequency",
+        "options": [
+          "Nunca",
+          "Rara vez",
+          "Algunas veces",
+          "Frecuentemente",
+          "Siempre"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "19",
+        "prompt": "¿Has utilizado herramientas de inteligencia artificial como apoyo en actividades de ciencia, tecnología, ingeniería o matemáticas?",
+        "dimension": "E. Acceso previo a experiencias adaptativas STEM",
+        "type": "category",
+        "options": [
+          "Sí",
+          "No",
+          "No estoy seguro/a"
+        ],
+        "values": [
+          "Sí",
+          "No",
+          "No estoy seguro/a"
+        ]
+      },
+      {
+        "id": "20",
+        "prompt": "En mi institución tengo oportunidades de usar tecnologías avanzadas para resolver problemas STEM.",
+        "dimension": "E. Acceso previo a experiencias adaptativas STEM",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "validation_units": [
+      {
+        "id": "1",
+        "label": "Ítem 1. Acceso a computador o tableta",
+        "equivalence": false
+      },
+      {
+        "id": "2",
+        "label": "Ítem 2. Tiempo suficiente de uso del dispositivo",
+        "equivalence": false
+      },
+      {
+        "id": "3",
+        "label": "Ítem 3. Dispositivo utilizado con mayor frecuencia",
+        "equivalence": false
+      },
+      {
+        "id": "4",
+        "label": "Ítem 4. Limitación por falta de dispositivo",
+        "equivalence": false
+      },
+      {
+        "id": "5",
+        "label": "Ítem 5. Acceso a internet en el hogar",
+        "equivalence": false
+      },
+      {
+        "id": "6",
+        "label": "Ítem 6. Estabilidad suficiente de conexión",
+        "equivalence": false
+      },
+      {
+        "id": "7",
+        "label": "Ítem 7. Actividades interrumpidas por conectividad",
+        "equivalence": false
+      },
+      {
+        "id": "8",
+        "label": "Ítem 8. Limitación por costo/disponibilidad",
+        "equivalence": false
+      },
+      {
+        "id": "9",
+        "label": "Ítem 9. Uso autónomo de plataforma",
+        "equivalence": false
+      },
+      {
+        "id": "10",
+        "label": "Ítem 10. Búsqueda y selección de información",
+        "equivalence": false
+      },
+      {
+        "id": "11",
+        "label": "Ítem 11. Gestión de archivos/respuestas",
+        "equivalence": false
+      },
+      {
+        "id": "12",
+        "label": "Ítem 12. Resolución de dificultades básicas",
+        "equivalence": false
+      },
+      {
+        "id": "13",
+        "label": "Ítem 13. Frecuencia de uso académico",
+        "equivalence": false
+      },
+      {
+        "id": "14",
+        "label": "Ítem 14. Uso digital para problemas/proyectos",
+        "equivalence": false
+      },
+      {
+        "id": "15",
+        "label": "Ítem 15. Uso de información para justificar",
+        "equivalence": false
+      },
+      {
+        "id": "16",
+        "label": "Ítem 16. Acceso a actividades que apoyan aprendizaje",
+        "equivalence": false
+      },
+      {
+        "id": "17",
+        "label": "Ítem 17. Experiencia con sistemas adaptativos",
+        "equivalence": false
+      },
+      {
+        "id": "18",
+        "label": "Ítem 18. Retroalimentación personalizada previa",
+        "equivalence": false
+      },
+      {
+        "id": "19",
+        "label": "Ítem 19. Uso previo de IA en STEM",
+        "equivalence": false
+      },
+      {
+        "id": "20",
+        "label": "Ítem 20. Oportunidades de tecnología avanzada STEM",
+        "equivalence": false
+      }
+    ],
+    "dimensions": [
+      "A. Acceso material",
+      "B. Conectividad",
+      "C. Habilidades digitales",
+      "D. Uso y aprovechamiento educativo",
+      "E. Acceso previo a experiencias adaptativas STEM"
+    ]
+  },
+  "IM-2": {
+    "id": "IM-2",
+    "version": "original-2026-09-13",
+    "status": "pendiente_validacion",
+    "title": "Escala de usabilidad y experiencia de aprendizaje",
+    "source": "IM-2 Escala de usabilidad y experiencia de aprendizaje.docx",
+    "items": [
+      {
+        "id": "1",
+        "prompt": "Aprender a utilizar PRISMA-STEM me resultó fácil.",
+        "dimension": "A. Facilidad de uso",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "2",
+        "prompt": "Me resultó sencillo encontrar las funciones que necesitaba.",
+        "dimension": "A. Facilidad de uso",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "3",
+        "prompt": "Las instrucciones y mensajes de la plataforma fueron claros.",
+        "dimension": "A. Facilidad de uso",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "4",
+        "prompt": "Pude utilizar la plataforma sin necesitar ayuda constantemente.",
+        "dimension": "A. Facilidad de uso",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "5",
+        "prompt": "PRISMA-STEM me ayudó a comprender mejor los problemas STEM.",
+        "dimension": "B. Utilidad percibida",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "6",
+        "prompt": "La retroalimentación me ayudó a identificar qué debía revisar.",
+        "dimension": "B. Utilidad percibida",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "7",
+        "prompt": "Las ayudas de la plataforma me sirvieron para mejorar mis respuestas.",
+        "dimension": "B. Utilidad percibida",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "8",
+        "prompt": "Considero que PRISMA-STEM puede ser útil para aprender temas STEM.",
+        "dimension": "B. Utilidad percibida",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "9",
+        "prompt": "Mi experiencia general utilizando PRISMA-STEM fue satisfactoria.",
+        "dimension": "C. Satisfacción",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "10",
+        "prompt": "Me sentí cómodo/a utilizando la plataforma durante las actividades.",
+        "dimension": "C. Satisfacción",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "11",
+        "prompt": "La forma en que se presentan las actividades me resultó adecuada.",
+        "dimension": "C. Satisfacción",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "12",
+        "prompt": "Volvería a utilizar PRISMA-STEM en otras actividades de aprendizaje.",
+        "dimension": "C. Satisfacción",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "13",
+        "prompt": "Las actividades despertaron mi interés por continuar trabajando.",
+        "dimension": "D. Motivación",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "14",
+        "prompt": "Las ayudas y cambios de dificultad me animaron a seguir intentando.",
+        "dimension": "D. Motivación",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "15",
+        "prompt": "Me interesó conocer si podía mejorar mis respuestas.",
+        "dimension": "D. Motivación",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "16",
+        "prompt": "El uso de la plataforma aumentó mi interés por resolver problemas STEM.",
+        "dimension": "D. Motivación",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "17",
+        "prompt": "Cuando una respuesta no funcionaba, intentaba revisarla y mejorarla.",
+        "dimension": "E. Compromiso con el aprendizaje",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "18",
+        "prompt": "Utilicé las ayudas de la plataforma para pensar, no solo para obtener una respuesta.",
+        "dimension": "E. Compromiso con el aprendizaje",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "19",
+        "prompt": "Me esforcé por explicar o justificar mis decisiones en las actividades.",
+        "dimension": "E. Compromiso con el aprendizaje",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "20",
+        "prompt": "Durante las sesiones mantuve la atención en las actividades propuestas.",
+        "dimension": "E. Compromiso con el aprendizaje",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "validation_units": [
+      {
+        "id": "1",
+        "label": "Ítem 1. Aprender a utilizar PRISMA-STEM me resultó fácil.",
+        "equivalence": false
+      },
+      {
+        "id": "2",
+        "label": "Ítem 2. Me resultó sencillo encontrar las funciones que necesitaba.",
+        "equivalence": false
+      },
+      {
+        "id": "3",
+        "label": "Ítem 3. Las instrucciones y mensajes de la plataforma fueron claros.",
+        "equivalence": false
+      },
+      {
+        "id": "4",
+        "label": "Ítem 4. Pude utilizar la plataforma sin necesitar ayuda constantemente.",
+        "equivalence": false
+      },
+      {
+        "id": "5",
+        "label": "Ítem 5. PRISMA-STEM me ayudó a comprender mejor los problemas STEM.",
+        "equivalence": false
+      },
+      {
+        "id": "6",
+        "label": "Ítem 6. La retroalimentación me ayudó a identificar qué debía revisar.",
+        "equivalence": false
+      },
+      {
+        "id": "7",
+        "label": "Ítem 7. Las ayudas de la plataforma me sirvieron para mejorar mis respuestas.",
+        "equivalence": false
+      },
+      {
+        "id": "8",
+        "label": "Ítem 8. Considero que PRISMA-STEM puede ser útil para aprender temas STEM.",
+        "equivalence": false
+      },
+      {
+        "id": "9",
+        "label": "Ítem 9. Mi experiencia general utilizando PRISMA-STEM fue satisfactoria.",
+        "equivalence": false
+      },
+      {
+        "id": "10",
+        "label": "Ítem 10. Me sentí cómodo/a utilizando la plataforma durante las actividades.",
+        "equivalence": false
+      },
+      {
+        "id": "11",
+        "label": "Ítem 11. La forma en que se presentan las actividades me resultó adecuada.",
+        "equivalence": false
+      },
+      {
+        "id": "12",
+        "label": "Ítem 12. Volvería a utilizar PRISMA-STEM en otras actividades de aprendizaje.",
+        "equivalence": false
+      },
+      {
+        "id": "13",
+        "label": "Ítem 13. Las actividades despertaron mi interés por continuar trabajando.",
+        "equivalence": false
+      },
+      {
+        "id": "14",
+        "label": "Ítem 14. Las ayudas y cambios de dificultad me animaron a seguir intentando.",
+        "equivalence": false
+      },
+      {
+        "id": "15",
+        "label": "Ítem 15. Me interesó conocer si podía mejorar mis respuestas.",
+        "equivalence": false
+      },
+      {
+        "id": "16",
+        "label": "Ítem 16. El uso de la plataforma aumentó mi interés por resolver problemas STEM.",
+        "equivalence": false
+      },
+      {
+        "id": "17",
+        "label": "Ítem 17. Cuando una respuesta no funcionaba, intentaba revisarla y mejorarla.",
+        "equivalence": false
+      },
+      {
+        "id": "18",
+        "label": "Ítem 18. Utilicé las ayudas de la plataforma para pensar, no solo para obtener una respuesta.",
+        "equivalence": false
+      },
+      {
+        "id": "19",
+        "label": "Ítem 19. Me esforcé por explicar o justificar mis decisiones en las actividades.",
+        "equivalence": false
+      },
+      {
+        "id": "20",
+        "label": "Ítem 20. Durante las sesiones mantuve la atención en las actividades propuestas.",
+        "equivalence": false
+      }
+    ],
+    "dimensions": [
+      "A. Facilidad de uso",
+      "B. Utilidad percibida",
+      "C. Satisfacción",
+      "D. Motivación",
+      "E. Compromiso con el aprendizaje"
+    ]
+  },
+  "IM-3": {
+    "id": "IM-3",
+    "version": "original-2026-09-13",
+    "status": "pendiente_validacion",
+    "title": "Prueba de competencias STEM Formas A y B",
+    "source": "IM-3 Prueba de competencias STEM Formas A y B.docx",
+    "items": [],
+    "validation_units": [
+      {
+        "id": "1",
+        "label": "Comprender el problema: explicar el problema y dos condiciones de funcionamiento (A1–B1)",
+        "equivalence": true
+      },
+      {
+        "id": "2",
+        "label": "Identificar cuatro datos o variables relevantes (A2–B2)",
+        "equivalence": true
+      },
+      {
+        "id": "3",
+        "label": "Identificar tres indicadores observables o medibles de buen funcionamiento (A3–B3)",
+        "equivalence": true
+      },
+      {
+        "id": "4",
+        "label": "Proponer dos formas de articular sensor, control y actuador (A4–B4)",
+        "equivalence": true
+      },
+      {
+        "id": "5",
+        "label": "Comparar dos alternativas usando datos, ventajas y desventajas (A5–B5)",
+        "equivalence": true
+      },
+      {
+        "id": "6",
+        "label": "Seleccionar una alternativa justificando con datos y restricciones (A6–B6)",
+        "equivalence": true
+      },
+      {
+        "id": "7",
+        "label": "Seleccionar un cable compatible con la corriente requerida y justificar (A7–B7)",
+        "equivalence": true
+      },
+      {
+        "id": "8",
+        "label": "Diagnosticar una falla y proponer posibles causas de forma secuencial (A8–B8)",
+        "equivalence": true
+      },
+      {
+        "id": "9",
+        "label": "Detectar un problema de ubicación del sensor y proponer mejora (A9–B9)",
+        "equivalence": true
+      },
+      {
+        "id": "10",
+        "label": "Predecir el efecto de cambiar el umbral de activación (A10–B10)",
+        "equivalence": true
+      },
+      {
+        "id": "11",
+        "label": "Comprobar metas utilizando resultados de varias pruebas (A11–B11)",
+        "equivalence": true
+      },
+      {
+        "id": "12",
+        "label": "Diseñar una prueba de una semana: constantes, mediciones, frecuencia y criterio de éxito (A12–B12)",
+        "equivalence": true
+      },
+      {
+        "id": "13",
+        "label": "Rúbrica general de calificación 0–3",
+        "equivalence": false
+      },
+      {
+        "id": "14",
+        "label": "Matriz de especificaciones de las cuatro dimensiones",
+        "equivalence": false
+      }
+    ],
+    "dimensions": [
+      "Comprender el problema",
+      "Proponer y escoger soluciones",
+      "Revisar y mejorar",
+      "Comprobar resultados"
+    ],
+    "forms": {
+      "A": {
+        "title": "FORMA A: Huerta escolar con riego automático",
+        "context": [
+          "En la huerta del colegio algunas plantas necesitan agua cuando el suelo está seco. El equipo quiere construir un sistema que revise la humedad y encienda una bomba de agua cuando haga falta. El sistema debe trabajar aunque no haya internet. Cuando el sensor marque menos de 35 % de humedad, se necesita riego. En cada riego se quieren entregar cerca de 8 litros de agua y terminar en máximo 15 minutos.",
+          "\nTABLE\nOpción | Agua que mueve | Corriente que necesita | Potencia | Costo\nBomba A | 0,80 litros por minuto | 2  A | 12 W | $45.000\nBomba B | 0,45 litros por minuto | 1  A | 6 W | $30.000\nEND TABLE",
+          "\nTABLE\nAyuda para leer los datos: “litros por minuto” indica cuánta agua mueve una bomba en un minuto. “Amperios (A)” indica cuánta corriente eléctrica necesita o soporta un elemento; en esta prueba solo debes comparar los números. “Vatios (W)” y “ Wh ” se usan como datos de energía; cuando sean necesarios, se dan las operaciones o los valores para que puedas compararlos.\nEND TABLE"
+        ],
+        "items": [
+          {
+            "id": "1",
+            "prompt": "Explica con tus palabras qué problema debe resolver el sistema. Menciona dos cosas que debe cumplir para funcionar bien.",
+            "type": "text",
+            "dimension": "Comprender el problema"
+          },
+          {
+            "id": "2",
+            "prompt": "Escribe cuatro datos o cosas que sería importante revisar o medir para que el sistema funcione bien.",
+            "type": "text",
+            "dimension": "Comprender el problema"
+          },
+          {
+            "id": "3",
+            "prompt": "Escribe tres señales que te permitirían decir: “el sistema está funcionando bien”. Deben ser cosas que puedas observar o medir.",
+            "type": "text",
+            "dimension": "Comprender el problema"
+          },
+          {
+            "id": "4",
+            "prompt": "Propón dos maneras en que el sensor, la placa de control y la bomba podrían trabajar juntos para regar la huerta.",
+            "type": "text",
+            "dimension": "Proponer y escoger soluciones"
+          },
+          {
+            "id": "5",
+            "prompt": "Compara las bombas A y B. Para mover 8 litros, la bomba A tardaría cerca de 10 minutos y la bomba B cerca de 18 minutos. Escribe una ventaja y una desventaja de cada una usando la tabla.",
+            "type": "text",
+            "dimension": "Proponer y escoger soluciones"
+          },
+          {
+            "id": "6",
+            "prompt": "El sistema debe entregar cerca de 8 litros en máximo 15 minutos. ¿Cuál bomba escogerías? Explica tu decisión usando al menos dos datos de la tabla.",
+            "type": "text",
+            "dimension": "Proponer y escoger soluciones"
+          },
+          {
+            "id": "7",
+            "prompt": "La bomba A necesita 2 A. El cable X soporta como máximo 1 A y el cable Y soporta como máximo 3 A. ¿Cuál cable usarías? Explica por qué.",
+            "type": "text",
+            "dimension": "Revisar y mejorar"
+          },
+          {
+            "id": "8",
+            "prompt": "El sensor marca 25 % de humedad, pero la bomba no enciende. Explica paso a paso qué revisarías. Escribe por lo menos dos posibles causas.",
+            "type": "text",
+            "dimension": "Revisar y mejorar"
+          },
+          {
+            "id": "9",
+            "prompt": "Después del riego, el agua cae directamente sobre el sensor y este marca que el suelo está muy húmedo aunque otras partes siguen secas. ¿Qué cambiarías en el sistema y por qué?",
+            "type": "text",
+            "dimension": "Revisar y mejorar"
+          },
+          {
+            "id": "10",
+            "prompt": "Ahora la bomba se enciende cuando la humedad baja de 35 %. Si cambiamos la regla para que se encienda cuando baje de 40 %, ¿crees que regaría más veces o menos veces? ¿Qué podría pasar con el agua y la energía que usa? Explica.",
+            "type": "text",
+            "dimension": "Comprobar resultados"
+          },
+          {
+            "id": "11",
+            "prompt": "En tres riegos la humedad terminó en 47 %, 49 % y 46 %. La meta era quedar entre 45 % y 55 %. ¿Se está cumpliendo la meta? Usa los datos para explicar tu respuesta.",
+            "type": "text",
+            "dimension": "Comprobar resultados"
+          },
+          {
+            "id": "12",
+            "prompt": "Imagina que vas a probar el sistema durante una semana. Explica qué mantendrías igual, qué medirías, cuántas veces lo medirías y qué resultado te mostraría que funciona bien.",
+            "type": "text",
+            "dimension": "Comprobar resultados"
+          }
+        ]
+      },
+      "B": {
+        "title": "FORMA B: Salón con ventilación automática",
+        "context": [
+          "En un salón del colegio hace demasiado calor algunos días. El equipo quiere construir un sistema que encienda un ventilador cuando la temperatura sea alta. El sistema debe funcionar sin internet. El ventilador se enciende cuando la temperatura pasa de 28 °C. La meta es llevar el salón cerca de 26 °C en máximo 15 minutos y gastar menos de 4 Wh de energía en cada uso.",
+          "\nTABLE\nOpción | Qué tan rápido enfría | Corriente que necesita | Energía aproximada para bajar 4 °C | Costo\nVentilador A | Baja cerca de 1 °C cada 4 min | 1  A | 3,2  Wh  (tardaría 16 min) | $35.000\nVentilador B | Baja cerca de 2 °C cada 5 min | 1,5  A | 3,0  Wh  (tardaría 10 min) | $50.000\nEND TABLE",
+          "\nTABLE\nAyuda para leer los datos: “°C” indica temperatura. “Amperios (A)” indica cuánta corriente eléctrica necesita o soporta un elemento; en esta prueba solo debes comparar los números. “ Wh ” indica energía utilizada; cuando sea necesario, los valores y datos suficientes se presentan para que puedas compararlos sin memorizar fórmulas.\nEND TABLE"
+        ],
+        "items": [
+          {
+            "id": "1",
+            "prompt": "Explica con tus palabras qué problema debe resolver el sistema. Menciona dos cosas que debe cumplir para funcionar bien.",
+            "type": "text",
+            "dimension": "Comprender el problema"
+          },
+          {
+            "id": "2",
+            "prompt": "Escribe cuatro datos o cosas que sería importante revisar o medir para que el sistema funcione bien.",
+            "type": "text",
+            "dimension": "Comprender el problema"
+          },
+          {
+            "id": "3",
+            "prompt": "Escribe tres señales que te permitirían decir: “el sistema está funcionando bien”. Deben ser cosas que puedas observar o medir.",
+            "type": "text",
+            "dimension": "Comprender el problema"
+          },
+          {
+            "id": "4",
+            "prompt": "Propón dos maneras en que el sensor, la placa de control y el ventilador podrían trabajar juntos para mantener el salón a una temperatura adecuada.",
+            "type": "text",
+            "dimension": "Proponer y escoger soluciones"
+          },
+          {
+            "id": "5",
+            "prompt": "Compara los ventiladores A y B. Escribe una ventaja y una desventaja de cada uno usando los datos de la tabla.",
+            "type": "text",
+            "dimension": "Proponer y escoger soluciones"
+          },
+          {
+            "id": "6",
+            "prompt": "El salón empieza a 30 °C y queremos acercarlo a 26 °C. Eso significa bajar cerca de 4 °C. El sistema debe hacerlo en máximo 15 minutos y gastar menos de 4 Wh. ¿Cuál ventilador escogerías? Explica usando los datos de la tabla.",
+            "type": "text",
+            "dimension": "Proponer y escoger soluciones"
+          },
+          {
+            "id": "7",
+            "prompt": "El ventilador B necesita 1,5 A. El cable X soporta como máximo 1 A y el cable Y soporta como máximo 2 A. ¿Cuál cable usarías? Explica por qué.",
+            "type": "text",
+            "dimension": "Revisar y mejorar"
+          },
+          {
+            "id": "8",
+            "prompt": "El sensor marca 31 °C, pero el ventilador no enciende. Explica paso a paso qué revisarías. Escribe por lo menos dos posibles causas.",
+            "type": "text",
+            "dimension": "Revisar y mejorar"
+          },
+          {
+            "id": "9",
+            "prompt": "El sensor quedó justo frente al aire del ventilador y marca rápidamente una temperatura más baja que la del resto del salón. ¿Qué cambiarías y por qué?",
+            "type": "text",
+            "dimension": "Revisar y mejorar"
+          },
+          {
+            "id": "10",
+            "prompt": "Ahora el ventilador se enciende cuando el salón pasa de 28 °C. Si cambiamos la regla para que solo se encienda cuando pase de 30 °C, ¿se encendería más veces o menos veces? ¿Qué podría pasar con la temperatura del salón y la energía que usa? Explica.",
+            "type": "text",
+            "dimension": "Comprobar resultados"
+          },
+          {
+            "id": "11",
+            "prompt": "En tres pruebas, cuando el ventilador se encendió, el salón terminó en 26,5 °C, 26,4 °C y 26,6 °C; tardó 10, 7 y 11 minutos, y usó 3,0, 2,1 y 3,3 Wh. La meta era quedar entre 25 °C y 27 °C, tardar máximo 15 minutos y usar menos de 4 Wh. ¿Se cumplió? Explica con los datos.",
+            "type": "text",
+            "dimension": "Comprobar resultados"
+          },
+          {
+            "id": "12",
+            "prompt": "Imagina que vas a probar el sistema durante una semana de clases. Explica qué mantendrías igual, qué medirías, cuántas veces lo medirías y qué resultado te mostraría que funciona bien.",
+            "type": "text",
+            "dimension": "Comprobar resultados"
+          }
+        ]
+      }
+    },
+    "rubric": {
+      "0": "No responde, no corresponde o contradice los datos.",
+      "1": "Reconoce parte del problema; explicación incompleta o sin evidencia suficiente.",
+      "2": "Respuesta adecuada con al menos un dato, cálculo o relación STEM pertinente.",
+      "3": "Respuesta adecuada y coherente que relaciona dos o más elementos pertinentes."
+    }
+  },
+  "IM-4": {
+    "id": "IM-4",
+    "version": "original-2026-09-13",
+    "status": "pendiente_validacion",
+    "title": "Escala de apropiación tecnopedagógica docente",
+    "source": "IM-4 Escala de apropiacion tecnopedagogica docente.docx",
+    "items": [
+      {
+        "id": "1",
+        "prompt": "Puedo seleccionar herramientas tecnológicas de acuerdo con los objetivos de aprendizaje.",
+        "dimension": "A. Integración tecnopedagógica",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "2",
+        "prompt": "Puedo integrar una herramienta digital sin convertir la tecnología en el centro de la clase.",
+        "dimension": "A. Integración tecnopedagógica",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "3",
+        "prompt": "Puedo adaptar una actividad STEM utilizando los recursos tecnológicos disponibles.",
+        "dimension": "A. Integración tecnopedagógica",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "4",
+        "prompt": "Puedo decidir cuándo una tecnología aporta realmente al aprendizaje de mis estudiantes.",
+        "dimension": "A. Integración tecnopedagógica",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "5",
+        "prompt": "Comprendo cómo una plataforma adaptativa puede ofrecer apoyos diferentes según el desempeño del estudiante.",
+        "dimension": "B. IA y aprendizaje adaptativo",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "6",
+        "prompt": "Puedo interpretar de manera general por qué PRISMA-STEM modifica una ayuda, dificultad o actividad.",
+        "dimension": "B. IA y aprendizaje adaptativo",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "7",
+        "prompt": "Puedo utilizar las recomendaciones de la IA como apoyo para orientar el aprendizaje.",
+        "dimension": "B. IA y aprendizaje adaptativo",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "8",
+        "prompt": "Puedo reconocer cuándo una recomendación generada por IA necesita ser revisada o corregida por el docente.",
+        "dimension": "B. IA y aprendizaje adaptativo",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "9",
+        "prompt": "Puedo utilizar registros de desempeño para identificar dificultades de aprendizaje.",
+        "dimension": "C. Uso pedagógico de información y evaluación",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "10",
+        "prompt": "Puedo usar la información generada por una plataforma para decidir qué apoyo necesita un estudiante.",
+        "dimension": "C. Uso pedagógico de información y evaluación",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "11",
+        "prompt": "Puedo integrar información digital con mi propia valoración pedagógica antes de tomar decisiones.",
+        "dimension": "C. Uso pedagógico de información y evaluación",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "12",
+        "prompt": "Puedo utilizar resultados de actividades para ajustar una explicación, reto o retroalimentación posterior.",
+        "dimension": "C. Uso pedagógico de información y evaluación",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "13",
+        "prompt": "Puedo identificar riesgos relacionados con privacidad y uso de datos de los estudiantes.",
+        "dimension": "D. Supervisión crítica y ética",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "14",
+        "prompt": "Considero necesario revisar críticamente las respuestas generadas por inteligencia artificial.",
+        "dimension": "D. Supervisión crítica y ética",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "15",
+        "prompt": "Puedo reconocer que una respuesta de IA puede ser convincente y, aun así, ser imprecisa o sesgada.",
+        "dimension": "D. Supervisión crítica y ética",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "16",
+        "prompt": "Puedo establecer límites para que la IA apoye el aprendizaje sin sustituir decisiones pedagógicas relevantes.",
+        "dimension": "D. Supervisión crítica y ética",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "17",
+        "prompt": "Puedo ajustar el uso de una plataforma a las condiciones reales de conectividad y dispositivos de mi institución.",
+        "dimension": "E. Adaptación al contexto institucional",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "18",
+        "prompt": "Puedo incorporar PRISMA-STEM dentro de una secuencia normal de clase sin desplazar la mediación docente.",
+        "dimension": "E. Adaptación al contexto institucional",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "19",
+        "prompt": "Puedo prever apoyos o alternativas cuando aparecen limitaciones técnicas durante una sesión.",
+        "dimension": "E. Adaptación al contexto institucional",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "20",
+        "prompt": "Puedo valorar si una herramienta tecnológica es viable y pertinente para el contexto de mis estudiantes.",
+        "dimension": "E. Adaptación al contexto institucional",
+        "type": "scale",
+        "options": [
+          "Totalmente en desacuerdo",
+          "En desacuerdo",
+          "Ni de acuerdo ni en desacuerdo",
+          "De acuerdo",
+          "Totalmente de acuerdo"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "validation_units": [
+      {
+        "id": "1",
+        "label": "Ítem 1. Puedo seleccionar herramientas tecnológicas de acuerdo con los objetivos de aprendizaje.",
+        "equivalence": false
+      },
+      {
+        "id": "2",
+        "label": "Ítem 2. Puedo integrar una herramienta digital sin convertir la tecnología en el centro de la clase.",
+        "equivalence": false
+      },
+      {
+        "id": "3",
+        "label": "Ítem 3. Puedo adaptar una actividad STEM utilizando los recursos tecnológicos disponibles.",
+        "equivalence": false
+      },
+      {
+        "id": "4",
+        "label": "Ítem 4. Puedo decidir cuándo una tecnología aporta realmente al aprendizaje de mis estudiantes.",
+        "equivalence": false
+      },
+      {
+        "id": "5",
+        "label": "Ítem 5. Comprendo cómo una plataforma adaptativa puede ofrecer apoyos diferentes según el desempeño del estudiante.",
+        "equivalence": false
+      },
+      {
+        "id": "6",
+        "label": "Ítem 6. Puedo interpretar de manera general por qué PRISMA-STEM modifica una ayuda, dificultad o actividad.",
+        "equivalence": false
+      },
+      {
+        "id": "7",
+        "label": "Ítem 7. Puedo utilizar las recomendaciones de la IA como apoyo para orientar el aprendizaje.",
+        "equivalence": false
+      },
+      {
+        "id": "8",
+        "label": "Ítem 8. Puedo reconocer cuándo una recomendación generada por IA necesita ser revisada o corregida por el docente.",
+        "equivalence": false
+      },
+      {
+        "id": "9",
+        "label": "Ítem 9. Puedo utilizar registros de desempeño para identificar dificultades de aprendizaje.",
+        "equivalence": false
+      },
+      {
+        "id": "10",
+        "label": "Ítem 10. Puedo usar la información generada por una plataforma para decidir qué apoyo necesita un estudiante.",
+        "equivalence": false
+      },
+      {
+        "id": "11",
+        "label": "Ítem 11. Puedo integrar información digital con mi propia valoración pedagógica antes de tomar decisiones.",
+        "equivalence": false
+      },
+      {
+        "id": "12",
+        "label": "Ítem 12. Puedo utilizar resultados de actividades para ajustar una explicación, reto o retroalimentación posterior.",
+        "equivalence": false
+      },
+      {
+        "id": "13",
+        "label": "Ítem 13. Puedo identificar riesgos relacionados con privacidad y uso de datos de los estudiantes.",
+        "equivalence": false
+      },
+      {
+        "id": "14",
+        "label": "Ítem 14. Considero necesario revisar críticamente las respuestas generadas por inteligencia artificial.",
+        "equivalence": false
+      },
+      {
+        "id": "15",
+        "label": "Ítem 15. Puedo reconocer que una respuesta de IA puede ser convincente y, aun así, ser imprecisa o sesgada.",
+        "equivalence": false
+      },
+      {
+        "id": "16",
+        "label": "Ítem 16. Puedo establecer límites para que la IA apoye el aprendizaje sin sustituir decisiones pedagógicas relevantes.",
+        "equivalence": false
+      },
+      {
+        "id": "17",
+        "label": "Ítem 17. Puedo ajustar el uso de una plataforma a las condiciones reales de conectividad y dispositivos de mi institución.",
+        "equivalence": false
+      },
+      {
+        "id": "18",
+        "label": "Ítem 18. Puedo incorporar PRISMA-STEM dentro de una secuencia normal de clase sin desplazar la mediación docente.",
+        "equivalence": false
+      },
+      {
+        "id": "19",
+        "label": "Ítem 19. Puedo prever apoyos o alternativas cuando aparecen limitaciones técnicas durante una sesión.",
+        "equivalence": false
+      },
+      {
+        "id": "20",
+        "label": "Ítem 20. Puedo valorar si una herramienta tecnológica es viable y pertinente para el contexto de mis estudiantes.",
+        "equivalence": false
+      }
+    ],
+    "dimensions": [
+      "A. Integración tecnopedagógica",
+      "B. IA y aprendizaje adaptativo",
+      "C. Uso pedagógico de información y evaluación",
+      "D. Supervisión crítica y ética",
+      "E. Adaptación al contexto institucional"
+    ]
+  },
+  "VP-1": {
+    "id": "VP-1",
+    "version": "original-2026-09-13",
+    "status": "pendiente_validacion",
+    "title": "Matriz de valoración del prototipo por expertos",
+    "source": "VP-1 Matriz de valoracion del prototipo por expertos.docx",
+    "items": [
+      {
+        "id": "1",
+        "prompt": "Los conceptos y datos científicos utilizados en los retos son correctos.",
+        "dimension": "A. Coherencia pedagógica y enfoque STEM",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "2",
+        "prompt": "La presentación de la actividad es comprensible y suficiente para estudiantes de 8.º y 9.º. Al valorar considere: lenguaje utilizado; claridad de las instrucciones; explicación de términos técnicos; suficiencia de la información suministrada.",
+        "dimension": "A. Coherencia pedagógica y enfoque STEM",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "3",
+        "prompt": "Las actividades corresponden con los desempeños STEM del estudio y exigen relacionar conocimientos de dos o más áreas STEM.",
+        "dimension": "A. Coherencia pedagógica y enfoque STEM",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "4",
+        "prompt": "Las situaciones planteadas llevan al estudiante a resolver problemas y tomar decisiones, no solo a repetir información.",
+        "dimension": "A. Coherencia pedagógica y enfoque STEM",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "5",
+        "prompt": "La actividad y su evaluación permiten valorar la explicación y la justificación de las decisiones de forma coherente con los propósitos de aprendizaje. Al valorar considere: coherencia entre la tarea, la evidencia solicitada, el criterio de evaluación y el propósito de aprendizaje.",
+        "dimension": "A. Coherencia pedagógica y enfoque STEM",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "6",
+        "prompt": "El sistema adapta el acompañamiento y la actividad siguiente de acuerdo con el desempeño del estudiante. Al valorar considere: nivel de ayuda ofrecido; dificultad detectada; selección de la actividad siguiente.",
+        "dimension": "B. Adaptación, retroalimentación e IA",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "7",
+        "prompt": "Los cambios en el nivel de dificultad o de ayuda son coherentes con el avance del estudiante.",
+        "dimension": "B. Adaptación, retroalimentación e IA",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "8",
+        "prompt": "La retroalimentación señala qué aspecto necesita revisión y orienta al estudiante sin entregarle directamente la solución completa.",
+        "dimension": "B. Adaptación, retroalimentación e IA",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "9",
+        "prompt": "Las recomendaciones de la IA apoyan la comprensión, la argumentación o la verificación de las respuestas.",
+        "dimension": "B. Adaptación, retroalimentación e IA",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "10",
+        "prompt": "La lógica general de los cambios adaptativos puede ser comprendida por el docente. Considere si el docente puede reconocer por qué cambia el nivel de ayuda, dificultad o actividad. La supervisión humana se valora específicamente en el criterio 21.",
+        "dimension": "B. Adaptación, retroalimentación e IA",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "11",
+        "prompt": "El ingreso y la navegación por la plataforma son claros y predecibles.",
+        "dimension": "C. Usabilidad, interacción y accesibilidad",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "12",
+        "prompt": "Los elementos de la interfaz son comprensibles y legibles, de modo que el estudiante puede identificar qué debe hacer. Al valorar considere: botones, textos, menús, etiquetas e indicaciones.",
+        "dimension": "C. Usabilidad, interacción y accesibilidad",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "13",
+        "prompt": "Ante un error de navegación o una acción incompleta, el sistema informa claramente lo ocurrido y ofrece una vía de recuperación. Al valorar considere: claridad del mensaje, posibilidad de continuar y conservación del avance.",
+        "dimension": "C. Usabilidad, interacción y accesibilidad",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "14",
+        "prompt": "La interfaz se mantiene utilizable en los equipos y tamaños de pantalla previstos para la institución.",
+        "dimension": "C. Usabilidad, interacción y accesibilidad",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "15",
+        "prompt": "Las funciones esenciales pueden utilizarse sin una conexión permanente a internet.",
+        "dimension": "D. Funcionamiento técnico y operación sin conexión",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "16",
+        "prompt": "Los tiempos de inicio y de respuesta de la IA permiten mantener la continuidad de una sesión de clase.",
+        "dimension": "D. Funcionamiento técnico y operación sin conexión",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "17",
+        "prompt": "Durante la sesión, el sistema mantiene la estabilidad operativa y conserva el progreso del estudiante. Al valorar considere: bloqueos o cierres inesperados y almacenamiento correcto del progreso.",
+        "dimension": "D. Funcionamiento técnico y operación sin conexión",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "18",
+        "prompt": "La plataforma es viable para instalarse y utilizarse en equipos de capacidad media o limitada. Al valorar considere: instalación, consumo de recursos, dependencias y necesidad de infraestructura adicional.",
+        "dimension": "D. Funcionamiento técnico y operación sin conexión",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "19",
+        "prompt": "La plataforma solicita únicamente los datos necesarios para sus propósitos pedagógicos y de investigación.",
+        "dimension": "E. Ética, privacidad y supervisión humana",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "20",
+        "prompt": "Los registros permiten proteger la identidad de los estudiantes mediante códigos, seudonimización u otras medidas apropiadas.",
+        "dimension": "E. Ética, privacidad y supervisión humana",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "21",
+        "prompt": "La IA funciona como apoyo y las decisiones relevantes pueden ser revisadas o supervisadas por el docente.",
+        "dimension": "E. Ética, privacidad y supervisión humana",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "22",
+        "prompt": "Existen mecanismos para detectar, reportar o corregir respuestas de la IA que sean imprecisas, sesgadas o inapropiadas.",
+        "dimension": "E. Ética, privacidad y supervisión humana",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "23",
+        "prompt": "Las situaciones y el vocabulario son pertinentes y comprensibles para el contexto escolar previsto. Al valorar considere: familiaridad de las situaciones, nivel del lenguaje y ausencia de supuestos que puedan excluir a estudiantes.",
+        "dimension": "F. Pertinencia territorial y viabilidad escolar",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "24",
+        "prompt": "Los contenidos evitan estereotipos o representaciones estigmatizantes de estudiantes y comunidades.",
+        "dimension": "F. Pertinencia territorial y viabilidad escolar",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "25",
+        "prompt": "La operación sin conexión constituye una alternativa viable para instituciones con conectividad limitada.",
+        "dimension": "F. Pertinencia territorial y viabilidad escolar",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      },
+      {
+        "id": "26",
+        "prompt": "La plataforma es viable para incorporarse a una clase en una institución educativa oficial. Al valorar considere: mediación docente, tiempo de clase, recursos técnicos y condiciones de implementación.",
+        "dimension": "F. Pertinencia territorial y viabilidad escolar",
+        "type": "scale",
+        "options": [
+          "No cumple",
+          "Cumple poco",
+          "Cumple parcialmente",
+          "Cumple adecuadamente",
+          "Cumple plenamente",
+          "N/A"
+        ],
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          "N/A"
+        ]
+      }
+    ],
+    "validation_units": [
+      {
+        "id": "1",
+        "label": "Los conceptos y datos científicos utilizados en los retos son correctos.",
+        "equivalence": false
+      },
+      {
+        "id": "2",
+        "label": "La presentación de la actividad es comprensible y suficiente para estudiantes de 8.º y 9.º.",
+        "equivalence": false
+      },
+      {
+        "id": "3",
+        "label": "Las actividades corresponden con los desempeños STEM del estudio y exigen relacionar conocimientos de dos o más áreas STEM.",
+        "equivalence": false
+      },
+      {
+        "id": "4",
+        "label": "Las situaciones planteadas llevan al estudiante a resolver problemas y tomar decisiones, no solo a repetir información.",
+        "equivalence": false
+      },
+      {
+        "id": "5",
+        "label": "La actividad y su evaluación permiten valorar la explicación y la justificación de las decisiones de forma coherente con los propósitos de aprendizaje.",
+        "equivalence": false
+      },
+      {
+        "id": "6",
+        "label": "El sistema adapta el acompañamiento y la actividad siguiente de acuerdo con el desempeño del estudiante.",
+        "equivalence": false
+      },
+      {
+        "id": "7",
+        "label": "Los cambios en el nivel de dificultad o de ayuda son coherentes con el avance del estudiante.",
+        "equivalence": false
+      },
+      {
+        "id": "8",
+        "label": "La retroalimentación señala qué aspecto necesita revisión y orienta al estudiante sin entregarle directamente la solución completa.",
+        "equivalence": false
+      },
+      {
+        "id": "9",
+        "label": "Las recomendaciones de la IA apoyan la comprensión, la argumentación o la verificación de las respuestas.",
+        "equivalence": false
+      },
+      {
+        "id": "10",
+        "label": "La lógica general de los cambios adaptativos puede ser comprendida por el docente.",
+        "equivalence": false
+      },
+      {
+        "id": "11",
+        "label": "El ingreso y la navegación por la plataforma son claros y predecibles.",
+        "equivalence": false
+      },
+      {
+        "id": "12",
+        "label": "Los elementos de la interfaz son comprensibles y legibles, de modo que el estudiante puede identificar qué debe hacer.",
+        "equivalence": false
+      },
+      {
+        "id": "13",
+        "label": "Ante un error de navegación o una acción incompleta, el sistema informa claramente lo ocurrido y ofrece una vía de recuperación.",
+        "equivalence": false
+      },
+      {
+        "id": "14",
+        "label": "La interfaz se mantiene utilizable en los equipos y tamaños de pantalla previstos para la institución.",
+        "equivalence": false
+      },
+      {
+        "id": "15",
+        "label": "Las funciones esenciales pueden utilizarse sin una conexión permanente a internet.",
+        "equivalence": false
+      },
+      {
+        "id": "16",
+        "label": "Los tiempos de inicio y de respuesta de la IA permiten mantener la continuidad de una sesión de clase.",
+        "equivalence": false
+      },
+      {
+        "id": "17",
+        "label": "Durante la sesión, el sistema mantiene la estabilidad operativa y conserva el progreso del estudiante.",
+        "equivalence": false
+      },
+      {
+        "id": "18",
+        "label": "La plataforma es viable para instalarse y utilizarse en equipos de capacidad media o limitada.",
+        "equivalence": false
+      },
+      {
+        "id": "19",
+        "label": "La plataforma solicita únicamente los datos necesarios para sus propósitos pedagógicos y de investigación.",
+        "equivalence": false
+      },
+      {
+        "id": "20",
+        "label": "Los registros permiten proteger la identidad de los estudiantes mediante códigos, seudonimización u otras medidas apropiadas.",
+        "equivalence": false
+      },
+      {
+        "id": "21",
+        "label": "La IA funciona como apoyo y las decisiones relevantes pueden ser revisadas o supervisadas por el docente.",
+        "equivalence": false
+      },
+      {
+        "id": "22",
+        "label": "Existen mecanismos para detectar, reportar o corregir respuestas de la IA que sean imprecisas, sesgadas o inapropiadas.",
+        "equivalence": false
+      },
+      {
+        "id": "23",
+        "label": "Las situaciones y el vocabulario son pertinentes y comprensibles para el contexto escolar previsto.",
+        "equivalence": false
+      },
+      {
+        "id": "24",
+        "label": "Los contenidos evitan estereotipos o representaciones estigmatizantes de estudiantes y comunidades.",
+        "equivalence": false
+      },
+      {
+        "id": "25",
+        "label": "La operación sin conexión constituye una alternativa viable para instituciones con conectividad limitada.",
+        "equivalence": false
+      },
+      {
+        "id": "26",
+        "label": "La plataforma es viable para incorporarse a una clase en una institución educativa oficial.",
+        "equivalence": false
+      }
+    ],
+    "dimensions": [
+      "A. Coherencia pedagógica y enfoque STEM",
+      "B. Adaptación, retroalimentación e IA",
+      "C. Usabilidad, interacción y accesibilidad",
+      "D. Funcionamiento técnico y operación sin conexión",
+      "E. Ética, privacidad y supervisión humana",
+      "F. Pertinencia territorial y viabilidad escolar"
+    ]
+  },
+  "VP-2": {
+    "id": "VP-2",
+    "version": "original-2026-09-13",
+    "status": "pendiente_validacion",
+    "title": "Guía de observación del pilotaje",
+    "source": "VP-2 Guia de observacion del pilotaje.docx",
+    "items": [
+      {
+        "id": "1",
+        "prompt": "Inicia la actividad prevista sin ayuda técnica importante.",
+        "dimension": "A. Realización de la actividad",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "2",
+        "prompt": "Comprende qué debe hacer en el reto.",
+        "dimension": "A. Realización de la actividad",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "3",
+        "prompt": "Puede registrar y enviar su respuesta.",
+        "dimension": "A. Realización de la actividad",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "4",
+        "prompt": "Finaliza la actividad prevista y conserva su avance.",
+        "dimension": "A. Realización de la actividad",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "5",
+        "prompt": "Encuentra las funciones que necesita sin búsquedas prolongadas.",
+        "dimension": "B. Interacción y facilidad de uso",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "6",
+        "prompt": "Avanza entre pantallas o actividades sin dificultad importante.",
+        "dimension": "B. Interacción y facilidad de uso",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "7",
+        "prompt": "Comprende los mensajes e indicaciones de la plataforma.",
+        "dimension": "B. Interacción y facilidad de uso",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "8",
+        "prompt": "Puede continuar después de un error de navegación o una acción incompleta.",
+        "dimension": "B. Interacción y facilidad de uso",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "9",
+        "prompt": "La retroalimentación corresponde con la respuesta entregada por el estudiante.",
+        "dimension": "C. Adaptación y retroalimentación",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "10",
+        "prompt": "La retroalimentación ayuda a identificar qué debe revisar o mejorar.",
+        "dimension": "C. Adaptación y retroalimentación",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "11",
+        "prompt": "La siguiente actividad se relaciona con el desempeño mostrado anteriormente.",
+        "dimension": "C. Adaptación y retroalimentación",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "12",
+        "prompt": "Los cambios de dificultad o de ayuda son coherentes con el desempeño observado.",
+        "dimension": "C. Adaptación y retroalimentación",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "13",
+        "prompt": "Las funciones necesarias permanecen disponibles sin conexión externa a internet.",
+        "dimension": "D. Funcionamiento técnico y operación sin conexión",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "14",
+        "prompt": "La plataforma responde sin bloqueos o interrupciones importantes.",
+        "dimension": "D. Funcionamiento técnico y operación sin conexión",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "15",
+        "prompt": "El progreso del estudiante se guarda correctamente durante la sesión.",
+        "dimension": "D. Funcionamiento técnico y operación sin conexión",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      },
+      {
+        "id": "16",
+        "prompt": "La sesión termina sin pérdida visible de información o registros.",
+        "dimension": "D. Funcionamiento técnico y operación sin conexión",
+        "type": "scale",
+        "options": [
+          "No logra / no cumple",
+          "Con dificultad o ayuda",
+          "Adecuadamente y de forma autónoma",
+          "N/O"
+        ],
+        "values": [
+          0,
+          1,
+          2,
+          "N/O"
+        ]
+      }
+    ],
+    "validation_units": [
+      {
+        "id": "1",
+        "label": "Inicia la actividad prevista sin ayuda técnica importante.",
+        "equivalence": false
+      },
+      {
+        "id": "2",
+        "label": "Comprende qué debe hacer en el reto.",
+        "equivalence": false
+      },
+      {
+        "id": "3",
+        "label": "Puede registrar y enviar su respuesta.",
+        "equivalence": false
+      },
+      {
+        "id": "4",
+        "label": "Finaliza la actividad prevista y conserva su avance.",
+        "equivalence": false
+      },
+      {
+        "id": "5",
+        "label": "Encuentra las funciones que necesita sin búsquedas prolongadas.",
+        "equivalence": false
+      },
+      {
+        "id": "6",
+        "label": "Avanza entre pantallas o actividades sin dificultad importante.",
+        "equivalence": false
+      },
+      {
+        "id": "7",
+        "label": "Comprende los mensajes e indicaciones de la plataforma.",
+        "equivalence": false
+      },
+      {
+        "id": "8",
+        "label": "Puede continuar después de un error de navegación o una acción incompleta.",
+        "equivalence": false
+      },
+      {
+        "id": "9",
+        "label": "La retroalimentación corresponde con la respuesta entregada por el estudiante.",
+        "equivalence": false
+      },
+      {
+        "id": "10",
+        "label": "La retroalimentación ayuda a identificar qué debe revisar o mejorar.",
+        "equivalence": false
+      },
+      {
+        "id": "11",
+        "label": "La siguiente actividad se relaciona con el desempeño mostrado anteriormente.",
+        "equivalence": false
+      },
+      {
+        "id": "12",
+        "label": "Los cambios de dificultad o de ayuda son coherentes con el desempeño observado.",
+        "equivalence": false
+      },
+      {
+        "id": "13",
+        "label": "Las funciones necesarias permanecen disponibles sin conexión externa a internet.",
+        "equivalence": false
+      },
+      {
+        "id": "14",
+        "label": "La plataforma responde sin bloqueos o interrupciones importantes.",
+        "equivalence": false
+      },
+      {
+        "id": "15",
+        "label": "El progreso del estudiante se guarda correctamente durante la sesión.",
+        "equivalence": false
+      },
+      {
+        "id": "16",
+        "label": "La sesión termina sin pérdida visible de información o registros.",
+        "equivalence": false
+      }
+    ],
+    "dimensions": [
+      "A. Realización de la actividad",
+      "B. Interacción y facilidad de uso",
+      "C. Adaptación y retroalimentación",
+      "D. Funcionamiento técnico y operación sin conexión"
+    ]
+  }
+}

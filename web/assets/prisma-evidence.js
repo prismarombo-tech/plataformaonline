@@ -1,0 +1,7 @@
+(()=>{'use strict';
+const key='prismaEvidenceOutboxV3';let busy=false;
+function read(){try{return JSON.parse(localStorage.getItem(key)||'[]')}catch{return[]}}
+async function flush(){if(busy)return;const session=JSON.parse(sessionStorage.getItem('prismaHubSessionV1')||'null');if(!session?.studentToken)return;busy=true;try{for(const event of read().filter(x=>x.participant_code===session.code)){try{const r=await fetch('/api/interaction',{method:'POST',headers:{'Content-Type':'application/json','X-PRISMA-Student-Token':session.studentToken},body:JSON.stringify(event)});if(!r.ok)break;localStorage.setItem(key,JSON.stringify(read().filter(x=>x.event_id!==event.event_id)))}catch{break}}}finally{busy=false}}
+function record(event){const session=JSON.parse(sessionStorage.getItem('prismaHubSessionV1')||'null');if(!session)return;const e={...event,participant_code:session.code,grade:session.grade,event_id:event.event_id||crypto.randomUUID(),session_id:window.PRISMA_RESEARCH?.sessionId?.()||'',payload:{...(event.payload||{}),recorded_at:new Date().toISOString()}};try{localStorage.setItem(key,JSON.stringify([...read(),e]));flush()}catch{alert('No hay espacio para guardar la evidencia. Conserva esta pantalla y avisa al docente.')}}
+window.PRISMA_EVIDENCE={record,flush};window.addEventListener('online',flush);window.addEventListener('focus',flush);setInterval(flush,15000);flush();
+})();

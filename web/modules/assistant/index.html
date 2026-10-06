@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- PRISMA: Pantalla del tutor local y biblioteca curricular. -->
+<!-- PRISMA: Los id de los elementos son usados por JavaScript; no renombrarlos sin actualizar su app.js. -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a1536">
+  <title>IA local · PRISMA STEM Online</title>
+  <link rel="stylesheet" href="../../assets/prisma-module-theme.css?v=100-release">
+  <link rel="stylesheet" href="../learn/styles.css?v=100-release">
+  <link rel="stylesheet" href="styles.css?v=100-release">
+<link rel="stylesheet" href="/assets/prisma-v3.css?v=100-release"><meta name="prisma-edition" content="online-rules"><style>.online-edition{padding:8px 14px;background:#eaf3fb;color:#163452;font:14px system-ui;text-align:center;overflow-wrap:anywhere}</style></head>
+<body class="assistant-body">
+  <header class="module-topbar">
+    <a class="back-btn" href="../../index.html?return=module">← Plataforma PRISMA</a>
+    <div class="module-brand"><strong>PRISMA · IA local y biblioteca</strong><small>el banco prediseñado + recuperación documental local</small></div>
+    <div class="user-mini"><strong id="userCode">Participante</strong><small id="userGrade">Grado</small></div>
+  </header>
+  <main class="assistant-root">
+    <section class="assistant-hero module-hero">
+      <div><span class="eyebrow">COINTELIGENCIA LOCAL</span><h1>Pregunta, contrasta y verifica</h1><p>Los documentos se procesan en el equipo anfitrión. PRISMA puede recuperar fragmentos de la biblioteca PDF y, si el banco prediseñado está instalado, redactar apoyo tutorial sin enviar información a internet.</p></div>
+      <div class="assistant-status"><img src="../../assets/prismi/maestro.svg" alt="Mascota PRISMA"><strong id="modelStatus">Comprobando motor…</strong><small id="modelDetail"></small></div>
+    </section>
+
+    <section class="assistant-grid">
+      <article class="assistant-card">
+        <span class="eyebrow">BIBLIOTECA CURRICULAR LOCAL</span><h2>Fuentes administradas por el docente</h2><p>Los PDF son seleccionados, cargados y retirados únicamente desde el panel docente protegido. Como estudiante puedes consultar esas fuentes, pero no modificarlas.</p>
+        <div class="library-readonly"><span>📚</span><div><strong id="libraryCount">Biblioteca preparada por el docente</strong><small>Los archivos y el índice BM25 permanecen en el equipo anfitrión.</small></div></div>
+        <div id="docStatus" class="doc-status">La biblioteca todavía no tiene documentos indexados.</div>
+      </article>
+
+      <article class="assistant-card">
+        <span class="eyebrow">CONSULTA DEL DOCUMENTO</span><h2>Responder con evidencia local</h2>
+        <textarea id="docQuestion" rows="5" placeholder="Escribe una pregunta sobre la biblioteca local…"></textarea>
+        <button id="askDocBtn" class="primary-btn" type="button">🔎 Buscar y responder</button>
+        <div id="docAnswer" class="answer-box hidden"></div>
+        <div id="docSources" class="source-list"></div>
+      </article>
+    </section>
+
+    <section class="assistant-card tutor-card">
+      <div class="tutor-heading"><div><span class="eyebrow">TUTOR GEMMA 2B</span><h2>Apoyo para pensar, no para reemplazar tu razonamiento</h2></div><span id="tutorBadge" class="sync-pill">Local</span></div>
+      <div id="chatLog" class="chat-log"><div class="chat-msg assistant"><strong>PRISMA</strong><p>Puedo darte pistas, hacer preguntas y ayudarte a revisar una idea. Si el banco prediseñado no está instalado, esta sección permanecerá desactivada.</p></div></div>
+      <div class="chat-compose"><textarea id="chatInput" rows="3" placeholder="Ej. Ayúdame a revisar cómo podría verificar mi solución sin darme la respuesta completa."></textarea><button id="sendBtn" class="primary-btn" type="button">Enviar</button></div>
+    </section>
+  </main>
+  <div id="toast" class="toast"></div>
+  <script src="../../config.js?v=100-release"></script>
+  <script src="../../assets/prisma-research.js?v=100-release"></script>
+  <script src="app.js?v=100-release"></script>
+<script src="/assets/prisma-evidence.js?v=100-release"></script><script src="/assets/prisma-study-link.js?v=100-release"></script></body>
+</html>

@@ -1,0 +1,10 @@
+data
+models
+runtime
+.git
+.env
+.env.*
+__pycache__
+*.db*
+*credentials*.json
+*service-account*.json

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a1536">
+<title>Editor de preguntas · PRISMA</title>
+<link rel="stylesheet" href="../../assets/prisma-module-theme.css?v=100-release">
+<link rel="stylesheet" href="styles.css?v=100-release">
+<link rel="stylesheet" href="/assets/prisma-v3.css?v=100-release"><meta name="prisma-edition" content="online-rules"><style>.online-edition{padding:8px 14px;background:#eaf3fb;color:#163452;font:14px system-ui;text-align:center;overflow-wrap:anywhere}</style></head>
+<body><div class="online-edition">PRISMA Online · retos prediseñados · sin IA generativa</div>
+<header class="editor-topbar">
+  <a class="back-link" href="../teacher/index.html">← Panel docente</a>
+  <div><strong>PRISMA · Editor de preguntas</strong><small>Modifica el contenido sin editar archivos a mano</small></div>
+  <span id="saveState" class="save-state">Sin cambios</span>
+</header>
+<main class="editor-shell">
+  <section id="lockedView" class="notice-card hidden">
+    <h1>Acceso docente requerido</h1>
+    <p>Entra primero al Panel docente con tu PIN. El editor solo permite cambios durante una sesión docente autenticada.</p>
+    <a class="primary" href="../teacher/index.html">Ir al Panel docente</a>
+  </section>
+
+  <section id="editorView" class="hidden">
+    <section class="hero-card">
+      <div><span class="eyebrow">BANCO CURRICULAR EDITABLE</span><h1>Corrige, elimina o agrega preguntas</h1><p>Los cambios se guardan directamente en el banco del módulo y quedan disponibles para todos los estudiantes que usen este equipo. Antes de cada guardado PRISMA crea una copia de seguridad automática.</p></div>
+      <div class="hero-rules"><span>✓ Una respuesta correcta</span><span>✓ Opciones sin repetir</span><span>✓ Copia antes de guardar</span></div>
+    </section>
+
+    <section class="toolbar-card">
+      <label>Módulo<select id="moduleSelect"></select></label>
+      <label>Etapa<select id="unitSelect"></select></label>
+      <label class="search-field">Buscar pregunta<input id="searchInput" type="search" placeholder="Escribe una palabra del enunciado"></label>
+      <div class="toolbar-actions">
+        <button id="validateBtn" class="secondary" type="button">✓ Validar</button>
+        <button id="saveBtn" class="primary" type="button">💾 Guardar cambios</button>
+      </div>
+    </section>
+
+    <section id="validationBox" class="validation-box hidden"></section>
+
+    <details class="reading-card">
+      <summary><div><span>📖</span><strong>Editar lectura de esta etapa</strong><small>Título, explicación, ideas clave y recordatorio.</small></div><b>⌄</b></summary>
+      <div class="reading-editor">
+        <div class="form-grid two">
+          <label>Título de la etapa<input id="unitTitle" type="text" maxlength="180"></label>
+          <label>Título de la lectura<input id="readingTitle" type="text" maxlength="220"></label>
+        </div>
+        <label>Introducción de la etapa<textarea id="unitIntro" rows="2" maxlength="1200"></textarea></label>
+        <label>Lectura / explicación principal<textarea id="readingContext" rows="6" maxlength="5000"></textarea></label>
+        <div class="form-grid two">
+          <label>Inicio de la lectura<textarea id="readingLead" rows="3" maxlength="1500"></textarea></label>
+          <label>Estrategia para pensar<textarea id="readingStrategy" rows="3" maxlength="1500"></textarea></label>
+        </div>
+        <label>Antes de jugar recuerda<textarea id="readingRemember" rows="2" maxlength="1500"></textarea></label>
+        <label>Palabras clave, separadas por coma<input id="readingKeywords" type="text" maxlength="1000"></label>
+        <label>Frases breves de la microlección, una por línea<textarea id="unitLesson" rows="5" maxlength="5000"></textarea></label>
+        <div class="subhead"><div><strong>Ideas clave</strong><small>Puedes cambiar el título, explicación y ejemplo sin alterar su identificador interno.</small></div></div>
+        <div id="keyIdeasEditor" class="key-ideas-editor"></div>
+        <button id="addKeyIdeaBtn" class="secondary" type="button">＋ Agregar idea clave</button>
+      </div>
+    </details>
+
+    <section class="workspace">
+      <aside class="question-panel">
+        <div class="panel-head"><div><strong>Preguntas de la etapa</strong><small id="questionCount">0 preguntas</small></div><button id="newQuestionBtn" class="primary compact" type="button">＋ Nueva</button></div>
+        <div id="questionList" class="question-list"></div>
+      </aside>
+
+      <article class="question-editor-card">
+        <div id="emptyEditor" class="empty-editor">Selecciona una pregunta para editarla.</div>
+        <form id="questionForm" class="hidden" onsubmit="return false">
+          <div class="question-editor-head">
+            <div><span id="questionTypeBadge" class="type-badge"></span><strong id="questionIdLabel"></strong></div>
+            <div><button id="duplicateBtn" class="secondary compact" type="button">Duplicar</button><button id="deleteBtn" class="danger compact" type="button">Eliminar</button></div>
+          </div>
+          <label>Enunciado de la pregunta<textarea id="questionPrompt" rows="4" maxlength="1200"></textarea></label>
+          <div class="form-grid two">
+            <label>Tipo<select id="questionType"><option value="choice">Selección única</option><option value="truefalse">Verdadero / Falso</option><option value="short">Respuesta corta</option><option value="hangman">Ahorcado</option><option value="memory">Memoria por parejas</option><option value="match">Relacionar parejas</option><option value="order">Ordenar pasos</option></select></label>
+            <label>Habilidad<input id="questionSkill" type="text" maxlength="120"></label>
+          </div>
+          <section id="typeEditor" class="type-editor"></section>
+          <label>Explicación después de responder<textarea id="questionExplanation" rows="3" maxlength="1800"></textarea></label>
+          <div class="form-grid three">
+            <label>Tiempo (segundos)<input id="questionTime" type="number" min="10" max="300"></label>
+            <label>Referencia de lectura<input id="questionReadingRef" type="text" maxlength="30" placeholder="Ej. k1"></label>
+            <label>ID interno<input id="questionId" type="text" maxlength="120"></label>
+          </div>
+          <div class="single-answer-note">💡 Para preguntas de selección, marca la respuesta correcta con el círculo. PRISMA no permitirá guardar si dos opciones son iguales o si la respuesta correcta no aparece exactamente una vez.</div>
+        </form>
+      </article>
+    </section>
+
+    <section class="backup-card">
+      <div><span class="eyebrow">SEGURIDAD</span><h2>Copias e intercambio</h2><p>Cada guardado conserva automáticamente la versión anterior del módulo.</p></div>
+      <div class="backup-actions">
+        <select id="backupSelect"><option value="">Sin copias todavía</option></select>
+        <button id="restoreBtn" class="secondary" type="button">↶ Restaurar copia</button>
+        <button id="exportBtn" class="secondary" type="button">⬇ Exportar JSON</button>
+        <label class="secondary file-label">⬆ Importar JSON<input id="importInput" type="file" accept="application/json,.json"></label>
+      </div>
+    </section>
+  </section>
+</main>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js?v=100-release"></script>
+<script src="/assets/prisma-evidence.js?v=100-release"></script><script src="/assets/prisma-study-link.js?v=100-release"></script></body>
+</html>

@@ -1,0 +1,851 @@
+[
+  {
+    "id": "written-math",
+    "title": "Decidir con áreas y restricciones",
+    "context": "Caso hipotético con datos ficticios. Un plano rectangular de 6 m por 4 m representa una zona de lectura. Cada mesa ocupa 1 m². Se necesitan 8 mesas y reservar al menos la mitad del área para circulación. No se modificará el espacio real.",
+    "task": "Responde escribiendo dentro de PRISMA. Calcula el área total y el espacio libre con 8 mesas y con 10. Escribe cuál opción satisface el requisito de circulación, explica si ambas son posibles y comprueba tu conclusión con una desigualdad. Basta describir las opciones con palabras y números.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "math",
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-measurement",
+    "title": "Comparar dos recipientes",
+    "context": "Caso hipotético con datos ficticios. Dos recipientes se rotulan con 500 mL. Tres mediciones del recipiente A dan 480, 490 y 485 mL; las de B dan 498, 502 y 500 mL. El criterio escolar propuesto es no alejarse más de 10 mL del rótulo.",
+    "task": "Responde escribiendo dentro de PRISMA. Calcula el promedio y la desviación respecto a 500 mL de cada conjunto. Escribe cuál cumple el criterio con estos datos y qué límite tiene tu conclusión con solo tres valores. Si A registrara después 510 mL, explica si cambiaría tu decisión.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "measurement",
+      "math"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-energy",
+    "title": "Elegir iluminación con datos",
+    "context": "Caso hipotético con datos ficticios. Dos lámparas hipotéticas de 4 W y 8 W proporcionan la misma iluminación útil durante 3 horas. Energía en Wh = potencia en W × horas. El límite diario es 15 Wh.",
+    "task": "Responde escribiendo dentro de PRISMA. Calcula ambos consumos, elige una opción y justifícala con el límite. Si la duración aumentara a 4 horas, comprueba si tu elección sigue cumpliendo y propone por escrito un ajuste.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "energy",
+      "math"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-environment",
+    "title": "Reducir residuos mezclados",
+    "context": "Caso hipotético con datos ficticios. En tres registros ficticios, cada uno de 40 objetos, hubo 12 mal clasificados sin apoyo, 5 con mensajes breves y 3 con ejemplos escritos. La meta es 4 o menos. Los grupos fueron distintos.",
+    "task": "Responde escribiendo dentro de PRISMA. Compara los resultados y elige qué apoyo recomendarías. Justifica con los conteos y explica por qué no prueban por sí solos una causa. Describe qué información faltante permitiría revisar la comparación, sin recoger datos reales.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "environment",
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-science",
+    "title": "Comparar conservación de temperatura",
+    "context": "Caso hipotético con datos ficticios. Dos vasos de agua tibia comienzan a 35 °C. A los 10 minutos, el vaso envuelto en papel está a 32 °C y el vaso sin envolver a 29 °C. Es una observación ficticia única; no permite afirmar todavía que el envoltorio sea la causa.",
+    "task": "Responde escribiendo dentro de PRISMA. Escribe una explicación posible de la diferencia y otra explicación alternativa. Distingue observación e hipótesis; señala las variables que deberían ser iguales para una comparación justa. Si otro registro mostrara 30 °C en ambos vasos, explica cómo revisarías tu conclusión. Resuelve con los datos escritos.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "science",
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-computational",
+    "title": "Organizar el préstamo de materiales",
+    "context": "Caso hipotético con datos ficticios. Hay 12 juegos de reglas para 24 estudiantes que trabajan en parejas. Un préstamo dura 10 minutos. El registro no debe incluir nombres y todos deben tener la misma oportunidad.",
+    "task": "Responde escribiendo dentro de PRISMA. Escribe una secuencia de asignación y devolución con códigos ficticios de pareja. Comprueba por escrito si todos pueden participar en un turno; después analiza qué cambia si solo hay 11 juegos y propone una regla justa.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-codingbasics",
+    "title": "Detectar errores en un contador",
+    "context": "Caso hipotético con datos ficticios. Un contador empieza en 0 y suma 1 por cada objeto registrado. El límite de una caja es 12. La regla actual avisa solamente si el contador es mayor que 12, pero se desea avisar cuando se completa la caja.",
+    "task": "Responde escribiendo dentro de PRISMA. Escribe el cambio de la condición, explica por qué es necesario y calcula las salidas para 11, 12 y 13. Propón una regla escrita para evitar duplicados y describe un caso que la ponga a prueba. No necesitas ejecutar código.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "codingbasics",
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-dataai",
+    "title": "Comprobar una recomendación automática",
+    "context": "Caso hipotético con datos ficticios. Un sistema recomienda abrir una sola estación de préstamo porque observó 6 solicitudes en 10 minutos. Otro día hubo 18 solicitudes en el mismo tiempo. No hay datos de otras jornadas ni del tiempo necesario para atender cada solicitud.",
+    "task": "Responde escribiendo dentro de PRISMA. Explica qué puede concluirse de ambos días y qué información falta para decidir. Compara por escrito mantener una estación o prever otra; declara los supuestos usados y un dato que cambiaría tu recomendación. No consultes fuentes ni recojas datos adicionales.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "dataai",
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-structures",
+    "title": "Interpretar resistencia de dos alternativas",
+    "context": "Caso hipotético con datos ficticios. Un informe ficticio compara alternativas A y B del mismo tamaño y costo. En tres ensayos, A resistió 2, 3 y 2 unidades de carga; B resistió 6, 5 y 6. La condición es resistir al menos 5 en cada ensayo. No se construirá ningún objeto.",
+    "task": "Responde escribiendo dentro de PRISMA. Identifica qué alternativa cumple en los tres registros y justifica tu decisión con los valores. Explica por qué el promedio solo podría ocultar un incumplimiento. Si B obtuviera 4 en un registro adicional, revisa por escrito la conclusión y señala qué seguiría siendo incierto.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "structures",
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-everyday",
+    "title": "Elegir un plan para el grupo",
+    "context": "Caso hipotético con datos ficticios. Dos planes ficticios cuestan 45 y 35 créditos. El presupuesto es 50. Ambos incluyen la actividad, pero solo el primero incluye el apoyo de lectura requerido por el grupo. No se contratará ningún servicio.",
+    "task": "Responde escribiendo dentro de PRISMA. Escribe el objetivo y las dos condiciones; compara las opciones y justifica una elección. Comprueba presupuesto y apoyo requerido por separado. Si el plan de 45 subiera a 55, explica qué cambia y qué alternativa razonada propondrías.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "everyday",
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-simplemachines",
+    "title": "Razonar sobre ventaja mecánica",
+    "context": "Caso hipotético con datos ficticios. En un modelo matemático ideal, esfuerzo × brazo de esfuerzo = carga × brazo de carga. La carga es 20 N y su brazo 5 cm. La alternativa A tiene brazo de esfuerzo 10 cm y B 20 cm. El esfuerzo permitido es hasta 6 N. Todos los valores se proporcionan; no se utiliza una palanca real.",
+    "task": "Responde escribiendo dentro de PRISMA. Calcula el esfuerzo de A y B, elige una opción y justifica con el límite. Comprueba sustituyendo en la igualdad. Si la carga fuera 30 N, explica si tu decisión seguiría cumpliendo y qué cambio numérico ayudaría.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "simplemachines",
+      "math"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-ohm",
+    "title": "Comparar corrientes por escrito",
+    "context": "Caso hipotético con datos ficticios. Una simulación ideal ofrece una fuente de 3 V y resistencias de 100 Ω o 200 Ω. I = V/R; la corriente se expresa en amperios. El diseño busca una corriente no mayor que 0,02 A. No se hará conexión a la red eléctrica.",
+    "task": "Responde escribiendo dentro de PRISMA. Calcula las dos corrientes usando la fórmula dada y compara con 0,02 A. Justifica tu elección y comprueba mediante V = I × R. Si la fuente cambiara a 5 V, revisa ambas opciones. Todos los cálculos se realizan en la caja de respuesta.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "ohm",
+      "math"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-electronics",
+    "title": "Leer una señal de nivel",
+    "context": "Caso hipotético con datos ficticios. Un sensor simulado devuelve 1 cuando una caja está llena y 0 cuando no lo está. Se quiere encender una señal solo cuando esté llena. Los datos de prueba son 0, 0, 1, 0 y 1.",
+    "task": "Responde escribiendo dentro de PRISMA. Escribe la regla de control y las cinco salidas esperadas. Explica cómo distinguirías por escrito una regla invertida de una señal siempre igual a 1 usando la secuencia dada. Justifica qué se puede y qué no se puede concluir.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "electronics",
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-arduino",
+    "title": "Controlar una señal de luz simulada",
+    "context": "Caso hipotético con datos ficticios. Una placa simulada recibe lecturas de luz entre 0 y 100. Debe encender un indicador por debajo de 30. Cerca del límite aparecen lecturas 29, 31, 29 y 31 que hacen parpadear el indicador.",
+    "task": "Responde escribiendo dentro de PRISMA. Escribe la regla inicial y sus salidas para 29, 31, 29 y 31. Compara con encender por debajo de 28 y apagar por encima de 32, conservando el estado entre ambos límites; supone que empieza apagado. Justifica ventajas y límites y comprueba con 27, 30 y 33. Basta texto o pseudocódigo en esta caja.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "arduino",
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "written-robotics",
+    "title": "Transportar un objeto en una cuadrícula",
+    "context": "Caso hipotético con datos ficticios. Un robot simulado debe ir de (0,0) a (3,2) moviéndose una casilla horizontal o vertical por paso. La casilla (1,1) está bloqueada. Cada paso consume una unidad de energía y hay 7 disponibles.",
+    "task": "Responde escribiendo dentro de PRISMA. Escribe dos secuencias de coordenadas que eviten (1,1). Cuenta sus pasos, compara su energía y justifica una elección. Si se bloqueara también (2,0), revisa tu secuencia por escrito. No se necesita un robot, un dibujo ni un simulador.",
+    "steps": [
+      "Explica el objetivo, los datos relevantes y las restricciones.",
+      "Escribe una solución como decisiones u operaciones ordenadas y compara alternativas.",
+      "Justifica tu elección con datos del caso y declara cualquier supuesto.",
+      "Comprueba el resultado por escrito; analiza un cambio o un caso límite y propone una mejora."
+    ],
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "robotics",
+      "computational"
+    ],
+    "evidence_goal": "Respuesta escrita: decisiones, razones, cálculos cuando sean pertinentes y una comprobación. No hay extensión mínima ni entrega externa.",
+    "success_criterion": "La respuesta atiende las condiciones, explica la decisión y comprueba con datos o supuestos declarados.",
+    "delivery_mode": "written-only-v312"
+  },
+  {
+    "id": "online-16",
+    "title": "Agua para la jornada",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Hay 24 estudiantes y cada uno necesita 0,5 L. Hay 3 recipientes de 4 L. Se desea una reserva del 10 %.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Calcula la necesidad y la reserva. Compara disponer de 12 L o de 14 L. Elige una opción y verifica qué sucede con 2 estudiantes más.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "math",
+      "environment"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-17",
+    "title": "Viaje a la biblioteca",
+    "context": "Caso hipotético; todos los datos están en el enunciado. El bus cuesta $2.800 por trayecto y tarda 25 minutos. Caminar tarda 50 minutos. Una estudiante dispone de $5.000 y 90 minutos para ida y vuelta.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara ida y vuelta en bus, caminando y combinando ambas opciones. Justifica la opción viable. Revisa qué cambia si el bus tarda 40 minutos.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "math",
+      "everyday"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-18",
+    "title": "Datos móviles limitados",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Un plan tiene 500 MB. Un video consume 80 MB, una lectura 5 MB y una actividad 15 MB. Se requieren 4 lecturas y 4 actividades.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara incluir 4 o 6 videos. Calcula el consumo total y propone un plan que respete el límite. Comprueba el caso de 50 MB reservados para otra tarea.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "dataai",
+      "math"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-19",
+    "title": "Turnos del computador",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Hay un computador disponible durante 60 minutos. Cada pareja necesita 12 minutos y cada cambio tarda 3 minutos; no hay cambio después de la última pareja.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara atender 4 o 5 parejas. Describe un orden justo y calcula el tiempo. Verifica si reducir cada actividad a 10 minutos permitiría atender 5 parejas.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "computational",
+      "everyday"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-20",
+    "title": "Recarga de batería",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Una batería comienza en 90 %. Una actividad consume 8 puntos porcentuales cada 10 minutos. Debe terminar con al menos 20 %.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara sesiones de 60 y 90 minutos usando el consumo constante supuesto. Explica el máximo tiempo permitido y una limitación de ese supuesto.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "energy",
+      "math"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-21",
+    "title": "Fruta sin desperdicio",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Se esperan 32 asistentes. Las frutas vienen en paquetes de 6 por $9.000 o de 8 por $11.000. Se entregará una fruta por persona.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara comprar solo paquetes de cada tamaño. Calcula costo y sobrantes, elige y verifica qué cambiaría con 36 asistentes.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "environment",
+      "math"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-22",
+    "title": "Una fila más justa",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Llegan 18 personas. Una ventanilla atiende 3 personas cada 5 minutos. Otra atiende 2 personas cada 5 minutos. Ambas empiezan al mismo tiempo.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara usar una o ambas ventanillas. Propón cómo distribuir la fila sin superar la capacidad y verifica tu distribución al finalizar cada intervalo de 5 minutos.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "computational",
+      "math"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-23",
+    "title": "Una encuesta pequeña",
+    "context": "Caso hipotético; todos los datos están en el enunciado. De 20 estudiantes consultados, 14 prefieren lectura digital. El colegio tiene 600 estudiantes.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Calcula el porcentaje de la muestra. Compara afirmar que todo el colegio prefiere esa opción o limitar la conclusión al grupo consultado. Explica qué información adicional necesitarías.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "dataai",
+      "science"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-24",
+    "title": "El descuento real",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Un artículo cuesta $40.000. La tienda A descuenta 20 % y cobra $5.000 de envío. La B cobra $36.000 sin envío.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Calcula los totales y justifica la elección. Verifica cuál conviene si se compran 2 artículos y el envío de A se cobra una sola vez.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "math",
+      "everyday"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-25",
+    "title": "Recorrido accesible",
+    "context": "Caso hipotético; todos los datos están en el enunciado. La ruta A tiene una longitud de 400 m e incluye escaleras. La B tiene una longitud de 550 m y tiene rampa. La velocidad supuesta es 50 m/min. Una persona no puede usar escaleras.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara tiempo y accesibilidad. Elige una ruta argumentando por qué el menor tiempo no es el único criterio. Comprueba si permite llegar en 12 minutos.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "measurement",
+      "everyday"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-26",
+    "title": "Avisos de un sensor",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Un sensor registra 18, 19, 45, 20 y 19 °C. El rango habitual del lugar es de 15 a 25 °C.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara usar el promedio de todos los datos o revisar primero el valor atípico. Explica qué puedes concluir y qué no. Calcula cómo cambia el promedio sin el 45, sin afirmar que ese dato sea necesariamente falso.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "science",
+      "dataai"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-27",
+    "title": "Cuadernos compartidos",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Hay 96 hojas disponibles. Cada cuadernillo requiere 8 hojas. Se necesitan 10 cuadernillos y 20 hojas de reserva.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Comprueba si alcanza. Compara reducir a 7 hojas por cuadernillo o reducir la reserva a 16. Justifica una opción y comprueba sus límites.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "math",
+      "environment"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-28",
+    "title": "Sombra en el patio",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Dos zonas hipotéticas tienen 30 m² y 45 m² de sombra. Se estima 1,5 m² por estudiante y hay 24 estudiantes.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Calcula la capacidad de cada zona. Compara las opciones y verifica si la elegida sirve cuando la sombra disminuye 20 %.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "measurement",
+      "environment"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-29",
+    "title": "Un archivo demasiado grande",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Un archivo pesa 18 MB. El correo admite 15 MB. La compresión A reduce el tamaño 10 % y la B lo reduce 25 %.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Calcula ambos tamaños, selecciona la opción viable y comprueba qué pasa si el archivo inicial pesa 22 MB. Explica por qué comprimir no siempre basta.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "dataai",
+      "math"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-30",
+    "title": "Horarios de lectura",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Ana dispone de 20 minutos diarios durante 5 días. Lee 3 páginas cada 5 minutos. El texto tiene 54 páginas.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara repartir la lectura en 3 o 5 días. Escribe un horario viable y verifica si sigue funcionando cuando lee 2 páginas cada 5 minutos.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "computational",
+      "math"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-31",
+    "title": "Riego simulado",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Una tabla indica que una planta requiere 600 mL por semana. El plan A asigna 100 mL diarios y el B 150 mL durante 4 días.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Calcula ambos totales, elige el que coincide con el dato y explica por qué no basta ese total para asegurar la salud de la planta. Revisa el caso de una necesidad de 750 mL.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "science",
+      "measurement"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-32",
+    "title": "La noticia del porcentaje",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Una noticia dice que los incidentes bajaron 50 %. Pasaron de 4 a 2 en un grupo de 100 personas.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Explica la diferencia entre bajar 2 incidentes y bajar 50 %. Compara dos titulares posibles y escribe uno preciso. Verifica si el mismo porcentaje significaría lo mismo al pasar de 400 a 200.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "dataai",
+      "everyday"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-33",
+    "title": "Presupuesto de una actividad",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Hay $120.000. La opción A cuesta $3.000 por estudiante. La B cobra $30.000 fijos más $2.000 por estudiante. Participan 35.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Calcula los costos y la opción viable. Encuentra para cuántos estudiantes cuestan lo mismo. Verifica qué ocurre con 45 participantes.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "math",
+      "everyday"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-34",
+    "title": "Consumo del cargador",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Un equipo de 20 W funciona 3 horas y otro de 12 W funciona 5 horas. La energía se calcula multiplicando potencia por tiempo.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara la energía de ambos equipos en Wh. Explica por qué menor potencia no siempre significa menor consumo total. Revisa el segundo equipo funcionando 4 horas.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "energy",
+      "math"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-35",
+    "title": "Ordenar instrucciones",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Para enviar una tarea hay que revisar el archivo, adjuntarlo y confirmar el destinatario antes de enviarlo. Revisar tarda 2 minutos, adjuntar 1 y confirmar 1.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Propón una secuencia y compárala con enviar antes de revisar. Calcula el tiempo y explica qué harías si el archivo no se adjunta. Comprueba tu secuencia con ese caso.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "codingbasics",
+      "computational"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-36",
+    "title": "Error en un promedio",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Tres notas son 3, 4 y 5. Una aplicación informa promedio 4,5. La regla correcta es sumar y dividir entre la cantidad de notas.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Verifica el resultado, describe los pasos correctos y propone una causa posible del error sin asegurar que sea la verdadera. Comprueba tu procedimiento con 2, 2 y 5.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "codingbasics",
+      "math"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-37",
+    "title": "Separación de residuos",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Un registro ficticio tiene 12 kg de papel, 8 kg de plástico y 5 kg de restos de comida. La bolsa A admite 15 kg y la B 10 kg.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Propón una distribución que separe los restos y no exceda capacidades; puedes usar varias bolsas. Compara dos opciones y verifica capacidad y cantidad de bolsas.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "environment",
+      "computational"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-38",
+    "title": "Elegir contraseña con criterio",
+    "context": "Caso hipotético; todos los datos están en el enunciado. La opción A tiene 6 cifras y se reutiliza. La B tiene 14 caracteres y es exclusiva. El estudiante debe recordar accesos a 3 servicios.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara las opciones considerando seguridad y uso cotidiano. Propón una estrategia descrita por escrito sin revelar contraseñas reales. Explica qué cambiaría si una contraseña se divulgara.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "dataai",
+      "everyday"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-39",
+    "title": "Un semáforo de avisos",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Una regla muestra verde si la ocupación es menor que 20, amarillo entre 20 y 29, y rojo desde 30. Los datos son 19, 20, 29 y 30.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Escribe el aviso para cada dato. Compara usar menor que 20 o menor o igual que 20. Explica el error en el límite y verifica tu regla con 0 y 31.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "codingbasics",
+      "electronics"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  },
+  {
+    "id": "online-40",
+    "title": "Mensajes de emergencia simulados",
+    "context": "Caso hipotético; todos los datos están en el enunciado. Un aviso A tiene 120 palabras y el B 45. Ambos deben indicar lugar, situación y acción. A omite el lugar; B contiene los 3 elementos.",
+    "task": "Responde únicamente por escrito dentro de PRISMA. Compara claridad y suficiencia, sin asumir que más texto es mejor. Propón una versión breve para un caso ficticio y verifica los 3 elementos. No contactes servicios reales.",
+    "focus": [
+      "problem",
+      "solution",
+      "context",
+      "check"
+    ],
+    "module_tags": [
+      "everyday",
+      "computational"
+    ],
+    "evidence_goal": "Explica tu decisión, tus razones y una comprobación con los datos del caso.",
+    "success_criterion": "Identifica condiciones, compara opciones, justifica y verifica; no hay extensión mínima.",
+    "delivery_mode": "written-only-online-v1"
+  }
+]

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- PRISMA: Plantilla compartida por los 15 modulos curriculares. -->
+<!-- PRISMA: Los id de los elementos son usados por JavaScript; no renombrarlos sin actualizar su app.js. -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a1536">
+  <title>PRISMA · Módulo</title>
+  <link rel="stylesheet" href="../../assets/prisma-module-theme.css?v=100-release">
+  <link rel="stylesheet" href="styles.css?v=100-release">
+<link rel="stylesheet" href="/assets/prisma-v3.css?v=100-release"><meta name="prisma-edition" content="online-rules"><style>.online-edition{padding:8px 14px;background:#eaf3fb;color:#163452;font:14px system-ui;text-align:center;overflow-wrap:anywhere}</style></head>
+<body><div class="online-edition">PRISMA Online · retos prediseñados · sin IA generativa</div>
+  <header class="module-topbar">
+    <a class="back-btn" href="../../index.html?return=module">← Plataforma PRISMA</a>
+    <div class="module-brand"><strong id="brandTitle">PRISMA</strong><small>Equipo PRISMA · Daniel Fernando Riaño Duarte</small></div>
+    <div class="user-mini"><strong id="userName">Estudiante</strong><small id="userCourse">Curso</small></div>
+  </header>
+  <main id="appRoot">
+    <section id="loadingView" class="loading-view"><div class="loader"></div><h1>Preparando aventura…</h1><p>Cargando solo el banco de este módulo.</p></section>
+    <section id="homeView" class="view hidden">
+      <section class="module-hero">
+        <div><span class="eyebrow">RUTA DE APRENDIZAJE</span><h1 id="moduleTitle"></h1><p id="moduleDescription"></p></div>
+        <div class="hero-stats"><div><strong id="completedCount">0/10</strong><span>submódulos</span></div><div><strong id="xpCount">0</strong><span>XP</span></div><div><strong id="accuracyCount">—</strong><span>precisión</span></div><div><strong id="starCount">0/30</strong><span>estrellas</span></div></div>
+        <div class="adventure-toolbar"><span id="worldName" class="world-pill">✨ Mundo PRISMA</span><button id="backpackBtn" class="backpack-btn" type="button">🎒 Mi colección <strong>0/8</strong></button></div>
+      </section>
+      <section class="rule-card"><strong>🎯 Regla de práctica</strong><p>Cada etapa conecta exploración inicial, explicación, práctica, revisión y aplicación. Las repeticiones son limitadas y no aumentan la competencia de rúbrica. Completa la decisión de cierre para continuar.</p></section>
+      <section id="moduleAdaptiveCard" class="module-adaptive-card"><div><span class="eyebrow">POR QUÉ ESTE REFUERZO</span><h2 id="moduleAdaptiveTitle">Ruta adaptativa activa</h2><p id="moduleAdaptiveReason">PRISMA observa tu trayectoria y prioriza la competencia que necesita más apoyo.</p><div id="moduleAdaptiveBars" class="module-adaptive-bars"></div></div><a class="module-adaptive-link" href="../adaptive/index.html">🧭 Volver a misión adaptativa</a></section>
+      <section class="section-head"><div><span class="eyebrow">10 ETAPAS</span><h2>Submódulos</h2></div><p>Lee primero la microlección y después demuestra lo aprendido.</p></section>
+      <section id="unitGrid" class="unit-grid"></section>
+      <section id="finalChallengeCard" class="final-challenge-card locked"></section>
+      <section class="ranking-card personal-progress-card"><div class="ranking-head"><div><span class="eyebrow">REGISTRO PERSONAL</span><h2>Progreso local del módulo</h2></div><span id="syncStatus" class="sync-pill">Solo local</span></div><div id="rankingList" class="ranking-list"><p class="muted">Tus resultados se guardan por código de participante. No hay ranking público.</p></div></section>
+    </section>
+    <section id="lessonView" class="view hidden lesson-view">
+      <button id="lessonBack" class="link-btn">← Volver a etapas</button>
+      <article class="lesson-card">
+        <span id="lessonBadge" class="eyebrow"></span>
+        <h1 id="lessonTitle"></h1>
+        <div class="learning-steps" aria-label="Ruta de esta etapa">
+          <span class="active"><b>1</b> 📖 Descubrir</span><span><b>2</b> 🎮 Practicar</span><span><b>3</b> 🌟 Mejorar</span>
+        </div>
+        <div class="reading-banner"><span>📖</span><div><strong>Primero descubre, después juega</strong><small>Todo lo necesario para responder estará explicado aquí con ejemplos sencillos.</small></div></div>
+        <section class="guided-reading">
+          <div class="reading-friend">
+            <div class="reading-friend-art"><span class="reading-sparkle">✦</span><img id="lessonMascotImg" src="../../assets/prismi/huevito.svg" alt="Mascota PRISMA"></div>
+            <div><span class="eyebrow">MENSAJE DE PRISMA</span><strong id="mascotLessonTitle">¡Vamos a descubrir algo nuevo!</strong><p id="mascotLessonText"></p></div>
+          </div>
+          <h2 id="readingTitle">Lectura inicial</h2>
+          <p id="lessonIntro" class="lesson-intro"></p>
+          <p id="readingContext" class="reading-context"></p>
+          <section id="conceptScene" class="concept-scene" aria-label="Escena interactiva de conceptos"></section>
+          <section class="reading-goals"><div class="reading-section-title"><span>🎯</span><div><strong>¿Qué vas a aprender?</strong><small>Al terminar deberías poder reconocer estas ideas.</small></div></div><div id="readingGoals" class="goal-chips"></div></section>
+          <section class="reading-block"><div class="reading-section-title"><span>🔎</span><div><strong>Exploramos paso a paso</strong><small>Lee cada tarjeta y observa el ejemplo.</small></div></div><div id="readingIdeas" class="reading-ideas"></div></section>
+          <section class="reading-block examples-block"><div class="reading-section-title"><span>💡</span><div><strong>Ejemplos guiados</strong><small>Mira cómo se aplica lo que acabas de leer. Después practicarás usando las ideas del ejemplo en otras preguntas.</small></div></div><div id="guidedExamples" class="guided-examples"></div></section>
+          <section id="miniLab" class="mini-lab" aria-label="Minirreto interactivo"></section>
+          <section class="reading-block"><div class="reading-section-title"><span>🧩</span><div><strong>Palabras e ideas clave</strong><small>Úsalas como pistas mientras juegas.</small></div></div><div id="readingKeywords" class="keyword-cloud"></div></section>
+          <div class="reading-strategy"><strong>🧠 Truco para pensar</strong><p id="readingStrategy"></p></div>
+          <div class="reading-remember"><strong>⭐ Antes de jugar recuerda</strong><p id="readingRemember"></p></div>
+        </section>
+        <button id="startQuizBtn" class="primary-btn start-adventure-btn"><span>🚀</span> Ya leí · comenzar 15 preguntas →</button>
+      </article>
+    </section>
+
+    <section id="finalSummaryView" class="view hidden final-summary-view">
+      <button id="finalBack" class="link-btn">← Volver a etapas</button>
+      <article class="final-summary-card">
+        <div class="final-summary-hero">
+          <div class="final-summary-mascot"><span>✦</span><img id="finalMascotImg" src="../../assets/prismi/maestro.svg" alt="Mascota PRISMA"></div>
+          <div><span class="eyebrow">MISIÓN FINAL DESBLOQUEADA</span><h1 id="finalSummaryTitle">Reto final</h1><p id="finalSummaryLead"></p><div class="final-best-pill" id="finalBestText"></div></div>
+        </div>
+        <div class="final-reading-banner"><span>🗺️</span><div><strong>Tu mapa de todo el curso</strong><small>Abre cada tema y recuerda las ideas principales antes de comenzar.</small></div></div>
+        <div id="finalSummaryGrid" class="final-summary-grid"></div>
+        <div class="final-rule-box"><strong>🎯 ¿Cómo funciona el reto?</strong><p id="finalRuleText"></p></div>
+        <button id="startFinalBtn" class="primary-btn final-start-btn">🌟 Comenzar misión final →</button>
+      </article>
+    </section>
+    <section id="quizView" class="view hidden quiz-view"><div class="quiz-companion"><div class="quiz-mascot-wrap"><img id="quizMascotImg" class="quiz-mascot-img" src="../../assets/prismi/huevito.svg" alt="Mascota PRISMA"><span id="quizCompanionIcon">✨</span></div><div><strong id="quizCompanionTitle">PRISMA te acompaña</strong><small id="quizCompanionText">Lee con calma. Si te equivocas, aprenderás con una pista y volverás a intentarlo más adelante.</small></div><div class="energy-shell"><div class="energy-title"><span>⚡ Energía PRISMA</span><b id="energyText">0/5</b></div><div id="energyCells" class="energy-cells" aria-label="Barra de energía"></div><small>5 aciertos seguidos = +15 XP</small></div></div><div class="quiz-top"><button id="quitQuizBtn" class="link-btn">← Salir</button><div class="quiz-progress-wrap"><div class="quiz-meta"><strong id="questionCounter">Pregunta 1 de 10</strong><span id="errorCounter">0 errores · 0 refuerzos</span></div><div class="progress-track"><i id="quizBar"></i></div></div><div id="timerBox" class="timer-box">30</div></div><article id="questionCard" class="question-card"><div class="question-tags"><span id="questionSkill"></span><span id="repeatTag" class="repeat-tag hidden">Refuerzo</span></div><h2 id="questionPrompt"></h2><div id="answerArea"></div><div id="feedbackBox" class="feedback hidden"><strong id="feedbackTitle"></strong><p id="feedbackText"></p><div id="feedbackStudy" class="feedback-study hidden"></div><button id="continueBtn" class="primary-btn">Continuar →</button></div></article></section>
+    <section id="resultView" class="view hidden result-view"><article class="result-card"><div id="resultIcon" class="result-icon">🏆</div><span class="eyebrow">RESULTADO</span><h1 id="resultTitle"></h1><p id="resultText"></p><div id="resultStars" class="result-stars"><span>☆☆☆</span><b>Tu resultado</b></div><div class="result-stats"><div><strong id="resultScore">0%</strong><span>aciertos de práctica</span></div><div><strong id="resultAttempts">0</strong><span>preguntas</span></div><div><strong id="resultErrors">0</strong><span>errores</span></div></div><div class="result-actions"><button id="resultHomeBtn" class="secondary-btn">Volver al mapa</button><button id="retryBtn" class="primary-btn">Repetir etapa</button></div></article></section>
+  </main>
+
+  <div id="backpackModal" class="backpack-modal hidden" role="dialog" aria-modal="true" aria-labelledby="backpackTitle">
+    <div class="backpack-dialog">
+      <div class="backpack-head"><div><span class="eyebrow">MOCHILA DE LOGROS</span><h2 id="backpackTitle">🎒 Mi colección</h2><p id="backpackWorld"></p></div><button id="backpackClose" class="backpack-close" type="button" aria-label="Cerrar colección">&times;</button></div>
+      <div class="badge-guide"><span>⭐ 1 estrella: superar</span><span>⭐⭐ 80% o más</span><span>⭐⭐⭐ 90% o más</span></div>
+      <div id="badgeGrid" class="badge-grid"></div>
+    </div>
+  </div>
+  <div id="celebrationLayer" class="celebration-layer" aria-hidden="true"></div>
+  <div id="toast" class="toast"></div>
+  <script src="../../assets/prisma-modules.js?v=100-release"></script>
+  <script src="../../config.js?v=100-release"></script>
+  <script>
+    (function(){
+      const key=new URLSearchParams(location.search).get('module')||'';
+      const cfg=window.PRISMA_MODULE_MAP?.[key];
+      function mix(hex, target='#ffffff', amount=.28){
+        const clean=String(hex||'#78b7ff').replace('#','');
+        const a=clean.length===3?clean.split('').map(x=>x+x).join(''):clean;
+        const b=target.replace('#','');
+        const nums=[0,2,4].map(i=>Math.round(parseInt(a.slice(i,i+2),16)*(1-amount)+parseInt(b.slice(i,i+2),16)*amount));
+        return '#'+nums.map(n=>n.toString(16).padStart(2,'0')).join('');
+      }
+      if(cfg){
+        document.body.dataset.prismaModule=key;
+        const accent=cfg.color||'#78b7ff';
+        document.body.style.setProperty('--accent',accent);
+        document.body.style.setProperty('--module-accent-a',accent);
+        document.body.style.setProperty('--module-accent-b',mix(accent,'#ffffff',.24));
+        document.body.style.setProperty('--module-highlight',mix(accent,'#ffffff',.42));
+        document.documentElement.style.setProperty('--accent',accent);
+        const meta=document.querySelector('meta[name="theme-color"]'); if(meta)meta.content=accent;
+        document.write('<script src="../../data/modules/'+cfg.bankFile+'?v=250"><\/script>');
+      } else {window.PRISMA_BANK_DATA=null;if(key==='forces')document.getElementById('loadingView').innerHTML='<h1>Este módulo fue retirado del catálogo</h1><p>Su historial se conserva. El nuevo módulo tiene un progreso independiente.</p><a href="index.html?module=everyday">Abrir Resolver retos cotidianos</a>';}
+    })();
+  </script>
+  <script src="../../assets/prisma-bank-enhancer.js?v=100-release"></script>
+  <script src="../../assets/prisma-adaptive.js?v=100-release"></script>
+  <script src="../../assets/prisma-bridge.js?v=100-release"></script>
+  <script src="../../assets/prisma-pedagogy.js?v=100-release"></script><script src="../../assets/prisma-research.js?v=100-release"></script>
+  <script src="../../assets/prisma-curriculum.js?v=100-release"></script><script src="app.js?v=100-release"></script>
+<script src="/assets/prisma-evidence.js?v=100-release"></script><script src="/assets/prisma-study-link.js?v=100-release"></script><script src="/assets/prisma-prismi.js?v=100-release"></script><script src="/assets/prisma-adaptive-audit.js?v=100-release"></script></body>
+</html>

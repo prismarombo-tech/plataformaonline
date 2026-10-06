@@ -1,0 +1,59 @@
+.adaptive-bar-row{grid-template-columns:minmax(170px,1fr) minmax(100px,1fr) minmax(145px,.6fr)!important;gap:12px!important}.adaptive-bar-row strong{width:auto!important;min-width:145px;font-size:.85rem;line-height:1.4;white-space:normal!important}.mastery-row strong{min-width:150px;width:auto!important;line-height:1.4}.mastery-line{grid-template-columns:minmax(100px,1fr) minmax(60px,1fr) minmax(100px,.8fr)!important}.mastery-line strong{width:auto!important;min-width:100px}.module-adaptive-bars>div,#moduleAdaptiveBars>div{grid-template-columns:1fr minmax(70px,1fr) minmax(140px,1fr)!important}#moduleAdaptiveBars strong{width:auto!important;font-size:.8rem}.mission-full-text{max-height:none;white-space:pre-wrap;overflow-wrap:anywhere}#diagnosticView{max-width:900px;margin:25px auto;padding:24px;background:#112345;color:#f5f9ff;border:1px solid #536b91;border-radius:15px}#diagnosticView fieldset{padding:20px;margin:16px 0;border:1px solid #6982a7;border-radius:10px}#diagnosticView legend{font-weight:600;line-height:1.5}#learningCycle{padding:20px;margin:20px 0}#learningCycle textarea{width:100%;font:inherit;min-height:100px}#processSupport,#processWork{display:block;width:100%;margin:8px 0 18px;font:inherit;padding:12px;border-radius:8px}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #ffbd45;outline-offset:3px}details>summary{cursor:pointer;padding:10px 0}#missionFullText{font:inherit;line-height:1.6}#missionFullText:empty{display:none}@media(max-width:700px){.adaptive-bar-row{grid-template-columns:minmax(0,1fr) minmax(130px,.7fr)!important}.adaptive-bar-row>.mini-track{grid-column:1/-1;grid-row:2}.adaptive-bar-row strong{min-width:0}.mastery-row strong{min-width:0}.adaptive-grid{grid-template-columns:1fr!important}.mastery-line{grid-template-columns:1fr 100px!important}.mastery-line>div{grid-column:1/-1;grid-row:2}#moduleAdaptiveBars>div{grid-template-columns:1fr 140px!important}#moduleAdaptiveBars i{grid-column:1/-1;grid-row:2}}
+
+/* 3.0.1: intrinsic text widths must not expand grid/flex tracks. */
+*,*::before,*::after{box-sizing:border-box}
+.adaptive-root,.adaptive-root *,.module-topbar>*{min-width:0}
+.adaptive-root{overflow-wrap:anywhere}
+.adaptive-root :is(p,h1,h2,h3,span,strong,small,button,a,label,pre){max-width:100%;white-space:normal}
+.adaptive-root pre{white-space:pre-wrap}
+.adaptive-grid{grid-template-columns:minmax(0,.82fr) minmax(0,1.6fr);align-items:start}
+.adaptive-hero{grid-template-columns:minmax(0,1fr) 230px}
+.mastery-row{grid-template-columns:minmax(0,1fr);gap:6px}
+.mastery-row strong{min-width:0!important;text-align:left;font-size:.9rem}
+.mastery-track{width:100%;grid-column:1/-1}
+.rubric-grid{grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch}
+.rubric-item{min-width:0;height:auto;overflow-wrap:anywhere}
+.rubric-item strong{font-size:clamp(1.15rem,2vw,1.6rem)}
+.mission-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+.mission-steps span{grid-template-columns:24px minmax(0,1fr)}
+.learning-route{grid-template-columns:repeat(3,minmax(0,1fr))}
+.learning-route article{grid-template-columns:30px minmax(0,1fr)}
+.mission-complete-grid,.feedback-split,.evaluation-detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.microchallenge-card{grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr)}
+.mission-heading,.result-adaptive-head,.learning-path-head,.answer-footer,.result-actions,.approval-status{flex-wrap:wrap}
+.mission-heading>div,.result-adaptive-head>div,.learning-path-head>div{flex:1 1 220px}
+.adaptive-root :is(.sync-pill,.route-pill,.mission-source,.mission-full-badge){white-space:normal;overflow-wrap:anywhere;max-width:100%}
+.result-adaptive-head>.sync-pill{flex:0 1 320px}
+.adaptive-root :is(input,textarea,select){width:100%;max-width:100%;min-width:0}
+.adaptive-root button,.adaptive-root a{height:auto;white-space:normal;overflow-wrap:anywhere}
+.adaptive-root .recommendation-buttons>a{flex:1 1 220px}
+.adaptive-root img{max-width:100%;object-fit:contain}
+.adaptive-bar-row,.mastery-line,#moduleAdaptiveBars>div{min-width:0}
+.adaptive-bar-row>*,.mastery-line>*,#moduleAdaptiveBars>div>*{min-width:0!important;overflow-wrap:anywhere}
+@media(max-width:950px){.adaptive-grid,.adaptive-hero{grid-template-columns:minmax(0,1fr)}.rubric-grid,.learning-route{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.adaptive-root{width:calc(100% - 20px)}.adaptive-card,.adaptive-hero{padding:16px}.rubric-grid,.mission-steps,.learning-route,.mission-complete-grid,.feedback-split,.evaluation-detail-grid,.microchallenge-card{grid-template-columns:minmax(0,1fr)}.adaptive-status-panel{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center}.module-topbar{grid-template-columns:minmax(0,1fr);position:relative;gap:8px}.module-topbar .user-mini,.module-brand{text-align:left}.adaptive-root h1{line-height:1.12}.adaptive-bar-row,.mastery-line,#moduleAdaptiveBars>div{grid-template-columns:minmax(0,1fr)!important}.adaptive-bar-row strong,.mastery-line strong,#moduleAdaptiveBars strong{min-width:0!important;text-align:left}.adaptive-root .mission-heading>div,.adaptive-root .result-adaptive-head>div,.adaptive-root .learning-path-head>div{flex-basis:100%}}
+
+.result-adaptive-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px)}.result-adaptive-head>.sync-pill{align-self:start;justify-self:start;border-radius:12px;flex:none;height:auto}
+@media(max-width:700px){.result-adaptive-head{grid-template-columns:minmax(0,1fr)}}
+
+#questionCase,#learningOrientation,#learningClosure{padding:16px;margin:14px 0;border:1px solid #657ea9;border-radius:16px;background:#112243;color:#f1f6ff;line-height:1.55;overflow-wrap:anywhere}#questionCase p{white-space:pre-line}#learningClosure button{display:block;width:100%;white-space:normal;text-align:left;margin:10px 0}#learningClosure article{padding:10px;border-bottom:1px solid #657ea9}#learningOrientation p{margin:8px 0}.choice-btn{white-space:normal;overflow-wrap:anywhere;min-width:0}
+
+/* Prismi: original illustration displayed as six separate viewports. */
+img[src*="/prismi/"]{object-fit:contain;border-radius:18%;}
+
+/* 3.1.3: task first, optional supporting detail. */
+.optional-panel{margin:14px 0;padding:12px 16px;border:1px solid rgba(150,185,230,.23);border-radius:14px;background:rgba(10,20,45,.25);min-width:0}
+.optional-panel>summary{cursor:pointer;font-weight:700;color:#d9edff;line-height:1.5;overflow-wrap:anywhere}
+.optional-panel>summary:focus-visible{outline:3px solid #81dbff;outline-offset:4px}
+.adaptive-root{max-width:980px}.adaptive-root .adaptive-grid{display:block}.adaptive-root .adaptive-hero{grid-template-columns:minmax(0,1fr) 180px;padding:22px}.adaptive-root .adaptive-hero h1{font-size:clamp(1.8rem,4vw,2.8rem)}
+.adaptive-root .adaptive-status-panel{padding:8px;gap:4px;background:transparent;border:0}.adaptive-root .status-orb{width:100px;height:92px}.adaptive-root .status-orb img{width:100px;height:92px}.adaptive-root .adaptive-status-panel .optional-panel{font-size:.75rem;padding:6px;margin:4px 0}
+.adaptive-root .mission-card-local{margin-top:18px}.adaptive-root .mission-heading{align-items:center}.adaptive-root .mission-heading .secondary-btn{font-size:.85rem}.adaptive-root .mission-task{font-size:1.05rem;line-height:1.7}
+.adaptive-root .mission-context{font-size:1.05rem}.adaptive-root #writtenMissionNotice{font-size:.85rem;color:var(--soft)}.adaptive-root .answer-label{margin-top:24px}.adaptive-root .progress-panel{margin-top:18px}.adaptive-root .progress-panel article{border:0;box-shadow:none;background:none;padding:8px}
+#adaptiveHubCard{border:2px solid rgba(121,224,247,.7);margin-top:0}#adaptiveRouteBtn{font-size:1.1rem;min-height:54px}#dashboardView>.hero{margin-top:24px}
+@media(max-width:600px){.adaptive-root .adaptive-hero{grid-template-columns:1fr}.adaptive-root .adaptive-status-panel{display:none}.adaptive-root .mission-heading{align-items:flex-start;flex-direction:column}.adaptive-root .mission-card-local{padding:16px}.adaptive-root .answer-footer{align-items:stretch;flex-direction:column}}
+
+/* New task replaces the previous one while its reviewed text is revealed. */
+.mission-card-local.mission-generating>:not(.mission-heading):not(.mission-loading){display:none!important}
+.mission-generating #writtenMissionNotice{display:none}
+.mission-generating .mission-loading{display:block}.mission-generating .ai-live-text{min-height:180px;max-height:420px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7}
+#adaptiveHubCard{margin-top:24px}

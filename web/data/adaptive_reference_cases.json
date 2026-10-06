@@ -1,0 +1,55 @@
+{
+  "status": "propuesta-pendiente-de-validacion-experta",
+  "mission": {
+    "title": "Elegir iluminación",
+    "context": "Dos lámparas de 4 W y 8 W dan la misma iluminación durante 3 horas. El límite es 15 Wh. Energía = potencia por horas.",
+    "task": "Elige una opción, justifica con cálculos y comprueba si funciona durante 4 horas."
+  },
+  "cases": [
+    {
+      "id": "sin-evidencia",
+      "answer": "No sé qué elegir.",
+      "proposed_rubric": {
+        "problem": 1,
+        "solution": 1,
+        "context": 1,
+        "check": 1
+      },
+      "reason": "No hay evidencia observable de los criterios."
+    },
+    {
+      "id": "solucion-sin-verificar",
+      "answer": "Elijo la lámpara de 4 W porque 4 por 3 son 12 Wh, menos de 15 Wh; la otra usa 24 Wh. Ambas iluminan igual.",
+      "proposed_rubric": {
+        "problem": 3,
+        "solution": 3,
+        "context": 3,
+        "check": 1
+      },
+      "reason": "Decisión justificada; falta revisar el cambio a cuatro horas."
+    },
+    {
+      "id": "verificacion-explicita",
+      "answer": "Con 3 horas, A usa 12 Wh y B 24 Wh. Elijo A por igual iluminación y consumo menor al límite de 15 Wh. A las 4 horas A usa 16 Wh y deja de cumplir. Limitaría el uso a 3,75 horas: 4 por 3,75 son 15 Wh. Supongo potencia constante.",
+      "proposed_rubric": {
+        "problem": 4,
+        "solution": 4,
+        "context": 4,
+        "check": 4
+      },
+      "reason": "Explicita restricción, compara, justifica y comprueba un ajuste y supuesto."
+    },
+    {
+      "id": "larga-sin-razones",
+      "answer": "Me parece una opción maravillosa. Es una idea muy interesante para el colegio. Me gusta mucho y pienso que todos estarán felices.",
+      "proposed_rubric": {
+        "problem": 1,
+        "solution": 1,
+        "context": 1,
+        "check": 1
+      },
+      "reason": "La extensión no sustituye datos, decisión ni verificación."
+    }
+  ],
+  "protocol": "Dos docentes valoran por separado sin ver las puntuaciones propuestas; concilian descriptores y contrastan con Gemma. Registrar acuerdos por dimensión, diferencias absolutas y sesgos; no incluir en pre/post IM-3."
+}

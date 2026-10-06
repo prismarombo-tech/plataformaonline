@@ -1,0 +1,15 @@
+/data/
+/models/
+/runtime/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*credentials*.json
+*service-account*.json
+*.db*
+*.gguf
+.venv/
+/_site/
+/.clasp.json

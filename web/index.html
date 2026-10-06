@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- PRISMA: Hub principal del estudiante: ingreso seudonimizado, contexto, resumen adaptativo y modulos. -->
+<!-- PRISMA: Los id de los elementos son usados por JavaScript; no renombrarlos sin actualizar su app.js. -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1536">
+  <title>PRISMA STEM Online</title>
+  <link rel="stylesheet" href="styles.css?v=100-release">
+<link rel="stylesheet" href="/assets/prisma-v3.css?v=100-release"><meta name="prisma-edition" content="online-rules"><style>.online-edition{padding:8px 14px;background:#eaf3fb;color:#163452;font:14px system-ui;text-align:center;overflow-wrap:anywhere}</style></head>
+<body><div class="online-edition">PRISMA Online · retos prediseñados · sin IA generativa</div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <button id="brandBtn" class="brand" type="button" aria-label="Ir al inicio">
+      <span class="brand-mark">✦</span>
+      <span><strong>PRISMA</strong><small>STEM Online</small></span>
+    </button>
+    <div class="top-actions">
+      <div id="localStatus" class="local-status offline"><span class="status-dot"></span><span id="localStatusText">Sistema online</span></div>
+      <div id="userChip" class="user-chip hidden"><span>🔐</span><div><strong id="chipName"></strong><small id="chipCourse"></small></div></div>
+      <a id="teacherBtn" class="ghost-btn teacher-top-link" href="modules/teacher/index.html">👩‍🏫 Docente</a>
+      <button id="refreshBtn" class="ghost-btn hidden" type="button">↻ Actualizar</button>
+      <button id="logoutBtn" class="ghost-btn hidden" type="button">Salir</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="loginView" class="view login-view">
+      <div class="login-shell">
+        <article class="login-hero">
+          <div class="hero-copy">
+            <span class="eyebrow">APRENDIZAJE STEM ADAPTATIVO · RETOS PREDISEÑADOS · ONLINE</span>
+            <h1>PRISMA <span>STEM Online</span></h1>
+            <p class="author">Plataforma de investigación · Daniel Fernando Riaño Duarte</p>
+            <p class="hero-text">Una sola experiencia integra rutas adaptativas, bancos de práctica y casos cotidianos conectados y 40 retos STEM prediseñados con orientación por reglas y revisión docente, con una rúbrica visible y respaldo pedagógico con registro privado en Google Sheets.</p>
+            <div class="hero-badges">
+              <span>📴 Acceso web</span><span>🧠 Ruta adaptativa</span><span>🗺️ 15 mundos</span><span>🔒 Datos seudonimizados</span>
+            </div>
+          </div>
+          <div class="login-mascot-wrap">
+            <div class="login-aura"></div>
+            <img src="assets/prismi/huevito.svg" alt="Mascota PRISMA" class="login-mascot mood-happy">
+            <div class="speech-bubble">¡Hola! Usa tu código de participante y construiremos una ruta a tu medida.</div>
+          </div>
+        </article>
+
+        <article class="login-card card">
+          <div class="card-kicker">MODO INVESTIGACIÓN ONLINE</div>
+          <h2>Ingreso seudonimizado <small style="font-size:.65rem;opacity:.6;white-space:nowrap">v1.0.0</small></h2>
+          <p>PRISMA no necesita tu nombre ni correo. Esta versión requiere conexión a Internet. Usa únicamente el código asignado para el estudio.</p>
+          <div class="shared-computer-note" role="note"><span>🏫</span><div><strong>Equipo compartido</strong><small>La sesión se conserva solo en la pestaña actual. El progreso se envía al servidor y se guarda en la hoja privada de Google Sheets configurada por el investigador.</small></div></div>
+          <form id="loginForm" novalidate>
+            <label>Código de participante
+              <input id="codeInput" autocomplete="off" maxlength="32" required placeholder="Ej. P-BOS-08-017">
+            </label>
+            <label>Grado
+              <input id="gradeInput" maxlength="18" required placeholder="Ej. 8°">
+            </label>
+            <label>PIN de acceso de 6 números
+              <input id="pinInput" type="password" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required placeholder="••••••">
+            </label>
+            <div class="learner-context-box">
+              <div class="learner-context-head"><span>🌎</span><div><strong>Cuéntale a PRISMA sobre ti</strong><small>Escribe todo en un solo cuadro. PRISMA usará este texto para adaptar tus retos a tus intereses y a tu entorno. No escribas nombres completos, direcciones ni datos privados.</small></div></div>
+              <label for="learnerContextInput">Intereses, entorno y lo que quieres aprender</label>
+              <textarea id="learnerContextInput" rows="6" maxlength="700" required placeholder="Ej. Me gustan los robots y el fútbol; en mi colegio me interesa mejorar el ahorro de agua; quiero aprender sensores, Arduino y cómo investigar problemas de mi entorno."></textarea>
+            </div>
+            <button id="loginBtn" class="primary-btn" type="submit">Entrar a PRISMA</button>
+            <p id="loginError" class="form-error" role="alert"></p>
+          </form>
+          <p class="privacy-note">Tu código y una huella del PIN se envían al servidor para verificar tu acceso. Usa el código y PIN entregados por el docente; no compartas datos personales.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="dashboardView" class="view dashboard-view hidden">
+      
+      <section class="dashboard-hero card">
+        <div class="mascot-stage" id="mascotStage">
+          <div class="mascot-aura"></div>
+          <div id="particles" class="particles" aria-hidden="true"></div>
+          <img id="mascotImage" src="assets/prismi/huevito.svg" alt="Mascota PRISMA" class="mascot-image mood-happy">
+          <div class="personality-pill"><span id="personalityEmoji">🔎</span><strong id="personalityName">Curioso</strong></div>
+        </div>
+        <div class="hero-dashboard-copy">
+          <span class="eyebrow">UNA MASCOTA PARA CADA MÓDULO</span>
+          <h1 id="welcomeTitle">¡Bienvenido!</h1>
+          <p class="module-mascot-intro">Elige un módulo para revisar el progreso de su mascota o entra a la ruta adaptativa STEM para recibir una misión según tus necesidades.</p>
+          <div id="mascotModuleTabs" class="mascot-module-tabs" aria-label="Seleccionar mascota por módulo"></div>
+          <h2 id="phaseTitle">Fase 1 · Huevito</h2>
+          <p id="phaseDescription"></p>
+          <p id="personalityDescription" class="personality-description"></p>
+          <div class="overall-progress">
+            <div class="progress-heading"><span>Progreso en <b id="selectedModuleName">Matemáticas</b></span><strong id="overallPercent">0%</strong></div>
+            <div class="progress-track"><span id="overallBar"></span></div>
+            <small id="evolutionHint">Completa misiones para ayudar a PRISMA a crecer.</small>
+          </div>
+          <div class="stats-row">
+            <div><strong id="statCompleted">0</strong><span>misiones</span></div>
+            <div><strong id="statXp">0</strong><span>XP</span></div>
+            <div><strong id="statAccuracy">—</strong><span>precisión</span></div>
+            <div><strong id="statStreak">0</strong><span>mejor racha</span></div>
+          </div>
+          <details class="personality-selector">
+            <summary>🎭 Elegir personalidad</summary>
+            <div id="personalityGrid" class="personality-grid"></div>
+            <p>La personalidad es una capa visual y no modifica la medición académica.</p>
+          </details>
+        </div>
+      </section>
+<section class="adaptive-hub-card card" id="adaptiveHubCard">
+        <div class="adaptive-hub-copy">
+          <span class="eyebrow">EMPIEZA AQUÍ · ACTIVIDAD PRINCIPAL</span>
+          <h2>Tu reto adaptativo: piensa, responde y mejora</h2>
+          
+          <p>Resuelve un caso por escrito y descubre cómo mejorar. Usa los módulos como apoyo cuando necesites practicar.</p><details class="optional-panel"><summary>Ver mi avance y los apoyos sugeridos</summary><p id="adaptiveReason">PRISMA usa tu modelo de cuatro competencias para pedir a la IA local una misión situada y evaluar la respuesta con criterios visibles.</p><div id="adaptiveMasteryBars" class="adaptive-mastery-bars"></div>
+          <div id="adaptiveRecommendations" class="adaptive-recommendations"></div></details>
+        </div>
+        <div class="adaptive-hub-action">
+          <div class="adaptive-mascot-home"><img id="adaptiveHubMascot" src="assets/prismi/huevito.svg" alt="Mascota de la ruta adaptativa PRISMA"><span id="adaptiveMascotHomePhase">Prismi Bebé · 0 misiones superadas</span><div id="adaptiveRewardsHome" class="adaptive-rewards-home"></div></div>
+          <button id="adaptiveRouteBtn" class="primary-btn" type="button">Resolver mi reto adaptativo</button>
+          <button id="progressAdviceBtn" class="secondary-btn progress-advice-btn" type="button">🧠 Revisar mi avance</button>
+          <a class="ghost-btn assistant-hub-link" href="modules/assistant/index.html">📚 Orientación + biblioteca</a>
+          <button id="researchInstrumentBtn" class="ghost-btn assistant-hub-link hidden" type="button">📝 Instrumento de investigación pendiente</button>
+          <small id="adaptiveLocalStatus">Motor local listo</small>
+          <div id="progressAdviceBackdrop" class="progress-advice-backdrop hidden" aria-hidden="true"></div>
+          <section id="progressAdviceBox" class="progress-advice-box hidden" role="dialog" aria-modal="true" aria-labelledby="progressAdviceTitle">
+            <div class="progress-advice-panel-head">
+              <div><span class="eyebrow">REVISIÓN PERSONAL CON IA</span><strong id="progressAdviceTitle">🔎 Lectura de tu progreso</strong></div>
+              <button id="progressAdviceClose" class="progress-advice-close" type="button" aria-label="Cerrar revisión">×</button>
+            </div>
+            <div class="progress-advice-scroll">
+              <section class="progress-ai-summary" aria-label="Explicación de la IA">
+                <span class="progress-section-label">💬 Explicación breve</span>
+                <p id="progressAdviceText"></p>
+              </section>
+              <div id="progressAdvicePlan" class="progress-advice-plan"></div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+
+
+      <section class="section-heading">
+        <div><span class="eyebrow">PRÁCTICA DE APOYO</span><h2>Módulos para reforzar tu reto</h2></div>
+        <p>Los módulos aportan práctica y refuerzo. La ruta adaptativa decide qué competencias conviene fortalecer y explica por qué.</p>
+      </section>
+      <section id="moduleGrid" class="module-grid" aria-live="polite"></section>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="assets/prisma-modules.js?v=100-release"></script>
+  <script src="config.js?v=100-release"></script>
+  <script src="assets/prisma-adaptive.js?v=100-release"></script>
+  <script src="assets/prisma-research.js?v=100-release"></script>
+  <script src="app.js?v=100-release"></script>
+<script src="/assets/prisma-evidence.js?v=100-release"></script><script src="/assets/prisma-study-link.js?v=100-release"></script><script src="/assets/prisma-prismi.js?v=100-release"></script><script src="/assets/prisma-adaptive-audit.js?v=100-release"></script><footer class="prisma-license-link" style="position:relative;padding:18px 24px 100px;text-align:center"><a href="legal/index.html" style="color:inherit;text-decoration:underline">Acerca de PRISMA · Licencia de investigación</a></footer></body>
+</html>
