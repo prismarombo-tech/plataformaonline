@@ -35,7 +35,7 @@ fs.writeFileSync(path.join(root,'apps-script/Data.gs'),Object.entries(values).ma
 fs.mkdirSync(path.join(root,'deployment'),{recursive:true});
 const serialized=JSON.stringify(values),packed=gzipSync(serialized);
 if(gunzipSync(packed).toString('utf8')!==serialized)throw Error('Deployment data round-trip failed');
-const bootstrap='const PRISMA_DATA=JSON.parse(Utilities.ungzip(Utilities.newBlob(Utilities.base64Decode('+JSON.stringify(packed.toString('base64'))+'))).getDataAsString("UTF-8"));\n'+Object.keys(values).map(k=>'const '+k+'=PRISMA_DATA.'+k+';').join('\n');
+const bootstrap='const PRISMA_DATA=JSON.parse(Utilities.ungzip(Utilities.newBlob(Utilities.base64Decode('+JSON.stringify(packed.toString('base64'))+'),"application/gzip")).getDataAsString("UTF-8"));\n'+Object.keys(values).map(k=>'const '+k+'=PRISMA_DATA.'+k+';').join('\n');
 fs.writeFileSync(path.join(root,'deployment/PRISMA.gs'),[bootstrap,...['Store.gs','Core.gs','Study.gs','Tools.gs'].map(f=>fs.readFileSync(path.join(root,'apps-script',f),'utf8'))].join('\n'));
 fs.copyFileSync(path.join(root,'apps-script/appsscript.json'),path.join(root,'deployment/appsscript.json'));
 console.log('Built GitHub Pages at '+out+'; '+Object.keys(banks).length+' banks; '+values.MISSIONS.length+' missions.');

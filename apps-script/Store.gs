@@ -15,7 +15,7 @@ function load_(){
  const p=JSON.parse(pointer),tab=s.getSheetByName(p.slot),rows=tab.getRange(1,1,p.chunks,1).getValues();
  const encoded=rows.map(r=>{need_(String(r[0]).startsWith('b64:'),'Copia de datos incompleta.',503);return String(r[0]).slice(4);}).join('');
  need_(hash_(encoded)===p.hash,'La verificación de la copia de datos falló. No se sobrescribirá.',503);
- return JSON.parse(Utilities.ungzip(Utilities.newBlob(Utilities.base64Decode(encoded))).getDataAsString('UTF-8'));
+ return JSON.parse(Utilities.ungzip(Utilities.newBlob(Utilities.base64Decode(encoded),'application/gzip')).getDataAsString('UTF-8'));
 }
 function save_(db){
  const raw=JSON.stringify(db);need_(raw.length<12000000,'El piloto alcanzó el límite de almacenamiento de esta edición. Exporta y revisa su capacidad.',507);
