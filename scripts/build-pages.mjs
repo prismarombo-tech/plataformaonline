@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 import crypto from 'node:crypto';
+import { gzipSync, gunzipSync } from 'node:zlib';
 const root=path.resolve(import.meta.dirname,'..'),src=path.join(root,'web'),out=path.join(root,'_site');
 const base=process.env.PRISMA_BASE_PATH||'/plataformaonline/';
 if(!/^\/[A-Za-z0-9_-]+\/$/.test(base))throw Error('Invalid project base path');
@@ -32,6 +33,9 @@ const files=walk(src).filter(f=>/\.(html|js|css|json)$/.test(f));const hash=cryp
 const values={RELEASE_HASH:hash.digest('hex'),MISSIONS:JSON.parse(fs.readFileSync(path.join(root,'online_missions.json'),'utf8')),CATALOG:JSON.parse(fs.readFileSync(path.join(root,'study_catalog.json'),'utf8')),BANKS:banks,MODULES:context.window.PRISMA_MODULES,PLANS:feedback.window.PRISMA_DIGITAL_PLANS};
 fs.writeFileSync(path.join(root,'apps-script/Data.gs'),Object.entries(values).map(([k,v])=>'const '+k+'='+JSON.stringify(v)+';').join('\n'));
 fs.mkdirSync(path.join(root,'deployment'),{recursive:true});
-fs.writeFileSync(path.join(root,'deployment/PRISMA.gs'),['Data.gs','Store.gs','Core.gs','Study.gs','Tools.gs'].map(f=>fs.readFileSync(path.join(root,'apps-script',f),'utf8')).join('\n'));
+const serialized=JSON.stringify(values),packed=gzipSync(serialized);
+if(gunzipSync(packed).toString('utf8')!==serialized)throw Error('Deployment data round-trip failed');
+const bootstrap='const PRISMA_DATA=JSON.parse(Utilities.ungzip(Utilities.newBlob(Utilities.base64Decode('+JSON.stringify(packed.toString('base64'))+'))).getDataAsString("UTF-8"));\n'+Object.keys(values).map(k=>'const '+k+'=PRISMA_DATA.'+k+';').join('\n');
+fs.writeFileSync(path.join(root,'deployment/PRISMA.gs'),[bootstrap,...['Store.gs','Core.gs','Study.gs','Tools.gs'].map(f=>fs.readFileSync(path.join(root,'apps-script',f),'utf8'))].join('\n'));
 fs.copyFileSync(path.join(root,'apps-script/appsscript.json'),path.join(root,'deployment/appsscript.json'));
 console.log('Built GitHub Pages at '+out+'; '+Object.keys(banks).length+' banks; '+values.MISSIONS.length+' missions.');
