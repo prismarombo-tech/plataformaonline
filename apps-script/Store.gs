@@ -58,6 +58,8 @@ function doPost(e){
     const cutoff=Date.now()-3600000;for(const k of Object.keys(db.operations))if(db.operations[k].at<cutoff)delete db.operations[k];
     if(JSON.stringify(response).length<300000)db.operations[q.request_id]={fingerprint:fp,response,at:Date.now()};
     save_(db);
+    try{syncViews_(db,q.path);}catch(viewError){props_().setProperty('PRISMA_VIEWS_ERROR',now_());response.warning='Los datos están guardados, pero las tablas visibles requieren actualizarVistas.';}
+
    }
   }
  }catch(err){response={status:err.status||503,data:{detail:err.status?err.message:'No se confirmó la operación. Revisa la conexión o la configuración del servidor.'}};}

@@ -41,6 +41,39 @@ function export_(d,path,kind){
  if(path.endsWith('export.csv')){need_(tables[kind],'Tipo de exportación no reconocido.');return {file:{mime:'text/csv;charset=utf-8',text:csv_(tables[kind])}};}
  const blobs=Object.entries(tables).map(([k,rows])=>Utilities.newBlob(csv_(rows),'text/csv',k+'.csv'));blobs.push(Utilities.newBlob(report,'text/html','INFORME_DOCENTE.html'));blobs.push(Utilities.newBlob(JSON.stringify({version:APP_VERSION,exported_at:now_(),...studyData_(d)},null,2),'application/json','estudio.json'));return {file:{mime:'application/zip',base64:Utilities.base64Encode(Utilities.zip(blobs,'PRISMA_DATOS.zip').getBytes())}};
 }
+function viewTables_(d){
+ const dash=dashboard_(d);
+ return {Estudiantes:dash.student_accounts,Retos_asignados:d.missions.map(m=>({codigo:m.participant_code,reto:m.mission_id,titulo:m.title,fecha:m.created_at})),Respuestas:d.attempts.map(a=>({codigo:a.participant_code,reto:a.mission_id,respuesta:a.answer,fecha:a.created_at})),Progreso:dash.participants,Instrumentos:d.records.filter(r=>r.kind==='application').concat(d.responses),Revisiones:d.reviews,Modulos:Object.values(d.modules),Sesiones:Object.values(d.sessions),Eventos:d.events};
+}
+function syncViews_(d,route){
+ const map={
+ '/api/teacher/students/create':['Estudiantes'],
+ '/api/learner_profile':['Estudiantes'],
+ '/api/module_state':['Modulos','Progreso'],
+ '/api/adaptive_state':['Progreso'],
+ '/api/teacher/review':['Revisiones','Progreso'],
+ '/api/research/session/start':['Sesiones','Estudiantes'],
+ '/api/research/session/end':['Sesiones','Estudiantes'],
+ '/api/interaction':['Eventos'], '/api/research/event':['Eventos']
+ };
+ let names=route?map[route]:null;
+ if(route&&route.startsWith('/api/generate_mission'))names=['Retos_asignados','Progreso'];
+ if(route&&route.startsWith('/api/evaluate_stem'))names=['Respuestas'];
+ if(route&&/\/(study|instruments)\//.test(route)&&!route.includes('draft'))names=['Instrumentos'];
+ if(route&&!names)return;
+ const tables=viewTables_(d),s=sheet_();
+ for(const name of names||Object.keys(tables)){
+  const rows=tables[name],t=s.getSheetByName(name)||s.insertSheet(name),keys=rows.length?[...new Set(rows.flatMap(Object.keys))]:['Estado'];
+  const values=[keys,...rows.map(r=>keys.map(k=>{const v=typeof r[k]==='object'?JSON.stringify(r[k]):String(r[k]??'');return "'"+v.slice(0,39000);} ))];
+  if(t.getMaxRows()<values.length)t.insertRowsAfter(t.getMaxRows(),values.length-t.getMaxRows());
+  if(t.getMaxColumns()<keys.length)t.insertColumnsAfter(t.getMaxColumns(),keys.length-t.getMaxColumns());
+  t.clearContents();t.getRange(1,1,values.length,keys.length).setValues(values);t.setFrozenRows(1);
+ }
+ const estado=s.getSheetByName('Estado')||s.insertSheet('Estado');
+ estado.getRange('A1:B3').setValues([['PRISMA Apps Script','Guardado y tablas de consulta'],['Última actualización visible',now_()],['Estado','Datos guardados; tablas actualizadas']]);
+ props_().deleteProperty('PRISMA_VIEWS_ERROR');
+}
 function actualizarVistas(){
- const lock=LockService.getScriptLock();lock.waitLock(30000);try{const d=load_(),s=sheet_(),dash=dashboard_(d),tables={Estudiantes:dash.student_accounts,Retos_asignados:d.missions.map(m=>({codigo:m.participant_code,reto:m.mission_id,titulo:m.title,fecha:m.created_at})),Respuestas:d.attempts.map(a=>({codigo:a.participant_code,reto:a.mission_id,respuesta:a.answer,fecha:a.created_at})),Progreso:dash.participants.map(p=>({codigo:p.participant_code,competencia:p.competence})),Instrumentos:d.records.filter(r=>r.kind==='application'),Revisiones:d.reviews};for(const[name,rows]of Object.entries(tables)){const t=s.getSheetByName(name)||s.insertSheet(name),keys=rows.length?[...new Set(rows.flatMap(Object.keys))]:['Estado'];const values=[keys,...rows.map(r=>keys.map(k=>{const v=typeof r[k]==='object'?JSON.stringify(r[k]):String(r[k]??'');return "'"+v.slice(0,39000);} ))];t.clearContents();if(t.getMaxRows()<values.length)t.insertRowsAfter(t.getMaxRows(),values.length-t.getMaxRows());if(t.getMaxColumns()<keys.length)t.insertColumnsAfter(t.getMaxColumns(),keys.length-t.getMaxColumns());t.getRange(1,1,values.length,keys.length).setValues(values);t.setFrozenRows(1);}const estado=s.getSheetByName('Estado');if(estado)estado.getRange('A1:B2').setValues([['PRISMA Apps Script','Vistas de consulta'],['Actualización',now_()]]);return 'Vistas actualizadas. La copia integral está en las pestañas privadas _PRISMA_GAS.';}finally{lock.releaseLock();}
+ const lock=LockService.getScriptLock();lock.waitLock(30000);
+ try{syncViews_(load_());return 'Tablas visibles actualizadas.';}finally{lock.releaseLock();}
 }

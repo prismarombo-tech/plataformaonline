@@ -1,6 +1,7 @@
 const DIMS=['problem','solution','context','check'];
 function code_(s){s=String(s||'').trim();need_(/^[A-Za-z0-9_-]{1,48}$/.test(s),'Código inválido.');return s;}
 function key_(s){return hash_(String(s));}
+function studentSnapshot_(d,c){return {state:d.states[key_(c)]||null,modules:Object.fromEntries(Object.values(d.modules).filter(m=>m.participant_code===c).map(m=>[m.module_key,m.state])),policy:d.policy};}
 function person_(d,c){return d.people[key_(c)]||{};}
 function eligible_(m){return m.consent==='granted'&&(m.role!=='student'||m.assent==='granted')&&!m.withdrawn;}
 function frozen_(d){return d.cohorts.some(x=>x.phase==='intervention');}
@@ -33,12 +34,13 @@ function route_(d,q){
  if(path==='/api/teacher/status')return {configured:!!props_().getProperty('PRISMA_TEACHER_HASH'),setup_local_only:true};
  if(path==='/api/teacher/setup')fail_('Configura la contraseña en las propiedades privadas de Apps Script.',403);
  if(path==='/api/teacher/login'){need_(!get,'Método inválido.');loginLimit_('teacher');need_(hash_(props_().getProperty('PRISMA_AUTH_SALT')+String(p.pin))===props_().getProperty('PRISMA_TEACHER_HASH'),'Clave incorrecta.',401);return token_(d,'teacher');}
- if(path==='/api/student/login'){need_(!get,'Método inválido.');const c=code_(p.participant_code);loginLimit_(c);const a=d.accounts[key_(c)];need_(a&&a.pin_hash===hash_(props_().getProperty('PRISMA_AUTH_SALT')+String(p.pin_hash)),'Código o PIN incorrecto.',401);return {...token_(d,'student',c),grade:a.grade};}
+ if(path==='/api/student/login'){need_(!get,'Método inválido.');const c=code_(p.participant_code);loginLimit_(c);const a=d.accounts[key_(c)];need_(a&&a.pin_hash===hash_(props_().getProperty('PRISMA_AUTH_SALT')+String(p.pin_hash)),'Código o PIN incorrecto.',401);return {...token_(d,'student',c),grade:a.grade,snapshot:studentSnapshot_(d,c)};}
  const auth=authenticate_(d,q),teacher=auth.role==='teacher';
  if(path.startsWith('/api/teacher/')||['/api/upload_pdf','/api/clear_docs','/api/clear_documents'].includes(path))need_(teacher,'Acceso docente requerido.',403);
  if(path.endsWith('/logout')){need_(!get,'Método inválido.');delete d.tokens[key_(q.teacher_token||q.student_token)];return {ok:true};}
  let c=teacher?String(p.participant_code||params.participant_code||''):auth.code;
  if(!teacher)need_(!(p.participant_code||params.participant_code)||(p.participant_code||params.participant_code)===c,'No puedes acceder a otra cuenta.',403);
+ if(path==='/api/student/snapshot'){need_(get&&!teacher,'Acceso estudiante requerido.',403);return studentSnapshot_(d,c);}
  const helpers=/^\/api\/(generate|evaluate_stem|prismi_tip|ask_document)/.test(path);
  if(helpers&&eligible_(person_(d,c))&&d.assignments.some(a=>a.subject===c&&a.instrument==='IM-3'&&a.status==='assigned'))fail_('Completa primero IM-3 sin ayudas.',423);
  const protectedPaths=['/api/teacher/question_bank/save','/api/teacher/question_bank/restore','/api/teacher/instrument/upload','/api/upload_pdf','/api/clear_docs','/api/clear_documents','/api/teacher/research/config','/api/teacher/research/unlock','/api/teacher/adaptive_policy'];
