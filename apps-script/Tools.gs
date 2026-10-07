@@ -47,6 +47,7 @@ function viewTables_(d){
 }
 function syncViews_(d,route){
  const map={
+ '/api/student/login':['Sesiones'],
  '/api/teacher/students/create':['Estudiantes'],
  '/api/learner_profile':['Estudiantes'],
  '/api/module_state':['Modulos','Progreso'],

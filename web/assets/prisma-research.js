@@ -7,11 +7,11 @@ function read(){try{return JSON.parse(sessionStorage.getItem(SESSION_KEY)||'null
 function hdr(s){return {'Content-Type':'application/json',...(s?.studentToken?{'X-PRISMA-Student-Token':s.studentToken}:{})}}
 async function post(path,obj,keepalive=false){const s=read();if(!s||location.protocol==='file:')return null;try{const r=await fetch(path,{method:'POST',headers:hdr(s),body:JSON.stringify(obj),keepalive});return r.ok?await r.json().catch(()=>({ok:true})):null}catch{return null}}
 function takeVisible(){const now=Date.now(),visible=wasVisible?Math.max(0,Math.min(60000,now-last)):0;last=now;wasVisible=document.visibilityState==='visible';return visible}
-function start(){
+function start(confirmedSessionId){
   if(starting)return starting;
   starting=(async()=>{
     const s=read();if(!s)return null;
-    const out=await post('/api/research/session/start',{participant_code:s.code,grade:s.grade,session_id:sessionStorage.getItem(RID_KEY)||''});
+    const out=confirmedSessionId?{session_id:confirmedSessionId}:await post('/api/research/session/start',{participant_code:s.code,grade:s.grade,session_id:sessionStorage.getItem(RID_KEY)||''});
     const current=read();
     if(out?.session_id&&current?.code===s.code&&current?.studentToken===s.studentToken){
       sessionStorage.setItem(RID_KEY,out.session_id);current.researchSessionId=out.session_id;

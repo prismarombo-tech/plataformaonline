@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0a1536">
   <title>PRISMA STEM Online</title>
-  <link rel="stylesheet" href="styles.css?v=100-release">
+  <link rel="stylesheet" href="styles.css?v=112-prismi-entry">
 <link rel="stylesheet" href="/assets/prisma-v3.css?v=100-release"><meta name="prisma-edition" content="online-rules"><style>.online-edition{padding:8px 14px;background:#eaf3fb;color:#163452;font:14px system-ui;text-align:center;overflow-wrap:anywhere}</style></head>
 <body><div class="online-edition">PRISMA Online · retos prediseñados · sin IA generativa</div>
   <div class="stars" aria-hidden="true"></div>
@@ -151,11 +151,19 @@
     </section>
   </main>
 
+  <dialog id="entryLoading" class="entry-loading" aria-labelledby="entryLoadingTitle" aria-describedby="entryLoadingStep">
+    <div class="entry-loading-art" aria-hidden="true"><span class="entry-spark entry-spark-one">✦</span><img id="entryLoadingMascot" src="assets/prismi/huevito.svg" alt=""><span class="entry-spark entry-spark-two">✧</span></div>
+    <p class="entry-loading-kicker">PRISMI TE ACOMPAÑA</p>
+    <h2 id="entryLoadingTitle">Estamos preparando tu entorno</h2>
+    <p id="entryLoadingStep" role="status" aria-live="polite">Comprobando tu acceso…</p>
+    <div class="entry-loading-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+    <small>Un momento: estamos conectando con tu espacio de aprendizaje.</small>
+  </dialog>
   <div id="toast" class="toast" role="status"></div>
   <script src="assets/prisma-modules.js?v=100-release"></script>
   <script src="config.js?v=100-release"></script>
   <script src="assets/prisma-adaptive.js?v=100-release"></script>
-  <script src="assets/prisma-research.js?v=100-release"></script>
-  <script src="app.js?v=111-fast-entry"></script>
+  <script src="assets/prisma-research.js?v=112-prismi-entry"></script>
+  <script src="app.js?v=112-prismi-entry"></script>
 <script src="/assets/prisma-evidence.js?v=100-release"></script><script src="/assets/prisma-study-link.js?v=100-release"></script><script src="/assets/prisma-prismi.js?v=100-release"></script><script src="/assets/prisma-adaptive-audit.js?v=100-release"></script><footer class="prisma-license-link" style="position:relative;padding:18px 24px 100px;text-align:center"><a href="legal/index.html" style="color:inherit;text-decoration:underline">Acerca de PRISMA · Licencia de investigación</a></footer></body>
 </html>

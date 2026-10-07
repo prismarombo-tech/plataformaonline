@@ -29,6 +29,13 @@ ok('Login snapshot returns only the authenticated learner and visible sheets upd
  assert.equal(tabs.Modulos.getRange(2,1).getValue(),"'"+code);
  assert.ok(!JSON.stringify(context.viewTables_(context.load_())).includes('pin_hash'));
 });
+ok('Bundled entry saves context and starts one research session atomically',()=>{
+ const a=created[1],q=packet('/api/student/login',{participant_code:a.participant_code,pin_hash:sha('PRISMA-LOCAL:'+a.participant_code+':'+a.pin),context:{profileText:'Synthetic entry context'}});
+ const r=send(q);assert.equal(r.status,200);assert.ok(r.data.session_id);assert.ok(r.data.snapshot);
+ assert.equal(send(q).data.session_id,r.data.session_id);
+ const db=context.load_();assert.equal(db.profiles[context.key_(a.participant_code)].profileText,'Synthetic entry context');
+ assert.equal(Object.values(db.sessions).filter(x=>x.session_id===r.data.session_id).length,1);
+});
 ok('40 unique missions, independent histories, no automatic repeat',()=>{const used=new Set();for(let i=0;i<40;i++){const r=call('/api/generate_mission',{participant_code:code,focus:{complexity:'avanzado'},support_level:'autonomo'},s);assert.equal(r.status,200);const m=r.data.mission;first||=m;assert.equal(m.complexity,'avanzado');assert.equal(m.support_level,'autonomo');used.add(m.id);}assert.equal(used.size,40);assert.equal(call('/api/generate_mission',{participant_code:code},s).status,409);assert.equal(call('/api/generate_mission',{participant_code:created[1].participant_code},s2).status,200);});
 let attempt;
 ok('Written answers stay provisional; teacher evidence cannot be forged',()=>{const r=call('/api/evaluate_stem',{participant_code:code,mission_id:first.mission_id,answer:'Explico dos opciones y compruebo los datos.',process:{support:'none'}},s);assert.equal(r.status,200);assert.equal(r.data.scored,false);attempt=r.data.attempt_id;assert.equal(call('/api/evaluate_stem',{mission_id:first.mission_id,answer:'Otro'},s2).status,403);const forged=call('/api/adaptive_state',{state:{taskEvidence:{fake:{source:'docente',provisional:false,rubric:{problem:4,solution:4,context:4,check:4}}}}},s);assert.equal(forged.data.state.competence.problem.tasks,0);const review=call('/api/teacher/review',{attempt_id:attempt,status:'adjusted',rubric:{problem:3,solution:3,context:4,check:3}},t,true);assert.equal(review.status,200);const state=call('/api/adaptive_state',{state:{}},s).data.state;assert.equal(state.competence.problem.level,3);assert.equal(Object.keys(state.taskEvidence)[0],first.mission_id);});

@@ -99,3 +99,14 @@ main{position:relative;z-index:1;width:min(1380px,100%);margin:auto;padding:clam
 /* V2.3.3 · bloque de presentación alineado hacia arriba */
 @media(min-width:901px){.login-hero .hero-copy{align-self:start}}
 @media(max-width:900px){.login-hero{align-items:stretch}.login-hero .hero-copy{align-self:start;padding-top:0}}
+
+/* Prismi accompanies verified entry; no simulated percentage or extra delay. */
+.entry-loading{width:min(440px,calc(100vw - 32px));max-height:calc(100dvh - 32px);box-sizing:border-box;border:1px solid #d9ddff;border-radius:28px;padding:28px 28px 30px;background:linear-gradient(155deg,#fff9fd,#eef5ff);color:#243055;text-align:center;box-shadow:0 24px 90px #111d5550;overflow:auto}
+.entry-loading::backdrop{background:#101b42aa;backdrop-filter:blur(5px)}
+.entry-loading-art{position:relative;display:grid;place-items:center;width:190px;height:190px;margin:auto;border-radius:50%;background:radial-gradient(circle,#eedcff,transparent 72%)}
+.entry-loading-art img{width:160px;height:160px;object-fit:contain;animation:prismi-entry-float 2.6s ease-in-out infinite;filter:drop-shadow(0 12px 12px #7f73a72e)}
+.entry-spark{position:absolute;color:#7562dc;font-size:28px;animation:prismi-entry-spark 2s ease-in-out infinite}.entry-spark-one{left:3px;top:30px}.entry-spark-two{right:2px;bottom:35px;animation-delay:.7s}
+.entry-loading-kicker{font-size:11px;font-weight:800;letter-spacing:2px;color:#7561b8;margin:8px 0 12px}.entry-loading h2{font-size:clamp(22px,5vw,28px);line-height:1.2;margin:0 0 16px}.entry-loading p[role=status]{font-size:15px;line-height:1.5;min-height:45px;margin:0}.entry-loading small{display:block;color:#5b6686;font-size:12px;line-height:1.5}
+.entry-loading-dots{display:flex;gap:7px;justify-content:center;margin:16px 0 20px}.entry-loading-dots i{width:7px;height:7px;border-radius:50%;background:#9474dc;animation:prismi-entry-spark 1.2s ease-in-out infinite}.entry-loading-dots i:nth-child(2){animation-delay:.2s}.entry-loading-dots i:nth-child(3){animation-delay:.4s}
+@keyframes prismi-entry-float{0%,100%{transform:translateY(5px) rotate(-3deg)}50%{transform:translateY(-8px) rotate(3deg)}}@keyframes prismi-entry-spark{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.1)}}
+@media(prefers-reduced-motion:reduce){.entry-loading-art img,.entry-spark,.entry-loading-dots i{animation:none}}
